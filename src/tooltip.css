@@ -1,0 +1,30 @@
+.tooltip {
+    position: relative;
+}
+
+.tooltip-text {
+    animation: tooltip-appear .2s ease;
+}
+
+.tooltip .tooltip-text {
+    position: absolute;
+    top: -5px;
+    left: 120%; 
+    display: none;
+    background-color: black;
+}
+
+.tooltip:hover .tooltip-text {
+    display: block;
+}
+
+@keyframes tooltip-appear {
+    0% {
+        opacity: 0%;
+        left: 50%;
+    }
+    100% {
+        opacity: 100%;
+        left: 120%;
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "page": {
+        "sidebar": {
+            "home": "Home",
+            "about": "About",
+            "music": "Music",
+            "games": "Games",
+            "proyects": "Projects"
+        },
+        "home": {
+            "body": "Welcome to my personal (developer) page!<br><br>Here I plan to save things about me, like what music I like listening to, my personal projects, my story and much more.<br><br>I intend to make this site a safe place for me to express myself and share things I enjoy, but also to help others on their journey and finding things that they like, so take a look around and see if anything catches your attention.<br><br>If you want to chat with me or tell me anything feel free to hit me up on Twitter!"
+        },
+        "about": {
+            "title": "About me",
+            "presentation": "Heya! I am Kimu, an spanish 19 year old female software engineer that loves playing around with tech stuff.<br><br>Messing around with everything has always been my thing, tearing down the family laptop, changing the leds in my controller, or soldering a new jack to my mp3.<br><br>I'm kind of an introvert, but I do like talking to people, from time to time.",
+            "story-01": "My Programming Story"
+        },
+        "music": {
+            "page-title": "Music I like",
+            "title": "My fav music"
+        }
+    }
+}
