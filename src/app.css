@@ -36,9 +36,9 @@
 :root {
 	--color-bg: #232020;
 	--color-dark: #131112;
-	--color-fg: #FAE8EB;
+	--color-fg: #fae8f5;
 	--color-accent: #F56476;
-	--color-border: #BFADA3;
+	--color-border: #d7d7d7;
 
 	--padding-s: .5rem;
 	--padding-m: 1rem;
@@ -94,6 +94,8 @@ a:hover {
 /* BUTTONS */
 button {
 	cursor: pointer;
+	background: none;
+	border: none;
 }
 
 select {

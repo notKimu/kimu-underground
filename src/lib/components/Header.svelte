@@ -46,7 +46,7 @@
         background-color: var(--color-bg);
         border-bottom: var(--border-width) solid var(--color-border);
         padding: var(--padding-m);
-        z-index: 9999999999;
+        z-index: 500;
     }
 
     .titlebar, .social {

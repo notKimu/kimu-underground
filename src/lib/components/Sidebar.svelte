@@ -48,7 +48,7 @@
         left: calc(0rem - var(--sidebar-width));
         display: flex;
         flex-direction: row;
-        z-index: 999999;
+        z-index: 100;
     }
 
     .sidebar-title {

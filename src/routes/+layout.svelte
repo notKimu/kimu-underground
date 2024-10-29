@@ -15,7 +15,10 @@
 	})
 </script>
 
+
 <div id="app">
+	<div class="scanlines"></div>
+
 	{#if $isLoading}
 	 <center class="loading-container">
 		 <img class="loading-img" src={GuraSpin} alt="">
@@ -31,6 +34,17 @@
 </div>
 
 <style>
+	.scanlines {
+		height: 100vh;
+		width: 100vw;
+		position: fixed;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+		background: repeating-linear-gradient(#00000000, #00000000 7px, #0000003e 7px, #0000003e 8px);
+		z-index: 1000;
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
