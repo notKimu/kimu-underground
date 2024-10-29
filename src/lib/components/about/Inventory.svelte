@@ -25,7 +25,6 @@
     .about-inventory {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, 1fr);
         gap: var(--padding-x);
     }
 

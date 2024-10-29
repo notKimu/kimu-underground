@@ -92,9 +92,8 @@
 	}
 
 	.album-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+		grid-template-columns: 1fr 1fr;
         gap: var(--padding-x);
     }
 </style>

@@ -113,8 +113,22 @@ select {
 }
 
 /* RESPONSIVENESS */
+.desktop-only {
+	display: unset;
+}
+.mobile-only {
+	display: none;
+}
+
 @media screen and (max-width: 728px) {
 	:root {
 		--padding-main-x: 1rem;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+	.mobile-only {
+		display: unset;
 	}
 }

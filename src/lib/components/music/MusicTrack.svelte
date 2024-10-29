@@ -14,12 +14,21 @@
 </a>
 
 <style>
-    .track-container {
-        width: 11rem;
+    .track-container {            
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--padding-s);
         padding: var(--padding-s);
         background-color: var(--color-dark);
+    }
+
+    .track-container img {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 728px) {
+        .track-container {
+            flex-direction: column;
+        }
     }
 </style>
