@@ -27,3 +27,18 @@ It was a dumpster fire from the start, but the community was very welcoming and 
 I met a lot of people there, we still have a small friend group that we made after the server closed.
 <br />
 For the story I am telling there are a few persons I met that are important, mainly the admin team from Rubius, Licorn3 and Sammwy.
+<br /><br /><br />
+
+## First dive
+
+So my first program was a Python bot for discord, 1200 lines of nonsense. I used txt files as a database and all commands where a massive if-else, but it worked and I was happy with it.
+<br />
+After that I decided that Python wasn't my thing and I moved to JavaScript where I made some other prototypes.
+<br /><br />
+
+My first big job was also a Discord bot.
+<br />
+The bot in Rubius's server had been down for 6 months no one was really interested in resurrecting it as the backup was lost (there was not one in the first place). So Licorn3 surprisingly asked me if I could help.
+<br />
+I was very new at the time and thinking about databases terrified me but I accepted, I had nothing to lose anyways.
+<br /><br /><br />
