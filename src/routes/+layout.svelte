@@ -34,7 +34,8 @@
 </div>
 
 <style>
-	.scanlines {
+	/* Makes hard reading the stories */
+	/* .scanlines {
 		height: 100vh;
 		width: 100vw;
 		position: fixed;
@@ -43,7 +44,7 @@
 		pointer-events: none;
 		background: repeating-linear-gradient(#00000000, #00000000 7px, #0000003e 7px, #0000003e 8px);
 		z-index: 1000;
-	}
+	} */
 
 	main {
 		display: flex;

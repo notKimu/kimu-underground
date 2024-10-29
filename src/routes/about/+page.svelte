@@ -28,7 +28,7 @@
 
 <div class="about">
   <div class="about-character">
-	<!-- On mobile we hide the stats when other things are shown -->
+    <!-- On mobile we hide the stats when other things are shown -->
     <div class={`${selectedProperty != "" ? "stats-responsive" : ""}`}>
       <CharacterStats />
     </div>
@@ -116,39 +116,9 @@
 <div class="about-stories">
   <StoryEntry
     title={$_("page.about.story-01")}
-    path="/about/entries/my-story"
+    path="/about/stories/programming"
     icon=""
     num={1}
-  />
-  <StoryEntry
-    title="Bla Bla Bla"
-    path="/about/entries/my-story"
-    icon=""
-    num={2}
-  />
-  <StoryEntry
-    title="Bla Bla Bla"
-    path="/about/entries/my-story"
-    icon=""
-    num={3}
-  />
-  <StoryEntry
-    title="Bla Bla Bla"
-    path="/about/entries/my-story"
-    icon=""
-    num={4}
-  />
-  <StoryEntry
-    title="Bla Bla Bla"
-    path="/about/entries/my-story"
-    icon=""
-    num={5}
-  />
-  <StoryEntry
-    title="Bla Bla Bla"
-    path="/about/entries/my-story"
-    icon=""
-    num={6}
   />
 </div>
 
@@ -212,10 +182,10 @@
 
   /* Responsiveness on the RPG stats */
   @media screen and (max-width: 728px) {
-	.stats-responsive {
-		width: 0;
-		opacity: 0;
-		pointer-events: none;
-	}
+    .stats-responsive {
+      width: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
   }
 </style>
