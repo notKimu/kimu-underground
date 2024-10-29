@@ -48,7 +48,12 @@
         left: calc(0rem - var(--sidebar-width));
         display: flex;
         flex-direction: row;
+        pointer-events: none;
         z-index: 100;
+    }
+
+    .sidebar-container * {
+        pointer-events: all;
     }
 
     .sidebar-title {

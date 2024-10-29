@@ -11,7 +11,7 @@ I've been loving programming and messing with stuff since I was a 6yo, but I've 
 I asked for programming lessons and tried a little bit by myself, but the classes I attended were bad, the copy-paste type of bad, so it was hard for me to learn the advanced stuff that I had in front of me as I didn't have the base I needed to start writing code by myself.
 <br /><br />
 
-It hasn't been until 2022 that I tried to write my own program, a Python bot for discord when I didn't even knew how to do a hello world in the first place.
+It hasn't been until 2022 that I tried to write my own program, a Python bot for discord when I didn't even knew how to do a "hello world" in the first place.
 <br /><br /><br />
 
 ## How it started

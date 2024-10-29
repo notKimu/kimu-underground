@@ -44,8 +44,7 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M0 0h14v2h2v14H0V0zm2 2v12h12V4h-1.998V2H2zm2 6h8v2H4V8zm0-4h6v2H4V4z"
-            fill-rule="evenodd"
+            d="M9.00001 0H7.00001L5.51292 4.57681L0.700554 4.57682L0.0825195 6.47893L3.97581 9.30756L2.48873 13.8843L4.10677 15.0599L8.00002 12.2313L11.8933 15.0599L13.5113 13.8843L12.0242 9.30754L15.9175 6.47892L15.2994 4.57681L10.4871 4.57681L9.00001 0Z"
           />
         </svg>
       </button>
@@ -150,6 +149,8 @@
   }
 
   .about-character-property {
+    display: grid;
+    place-content: center;
     border: var(--border-width) solid var(--color-border);
     border-left: none;
     padding: var(--padding-s);

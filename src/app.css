@@ -1,41 +1,3 @@
-/* FONTS */
-@font-face {
-	font-family: "departure-mono";
-	src: url("$lib/fonts/departure_mono/DepartureMono-Regular.otf");
-}
-@font-face {
-	font-family: "fustat";
-	src: url("$lib/fonts/Fustat/Fustat[wght].ttf");
-}
-@font-face {
-	font-family: "NoseTransport";
-	src: url("$lib/fonts/Nose-Transport/Web/NoseTransport9-RegularDot.woff2");
-}
-@font-face {
-	font-family: "schroffer_mono";
-	src: url("$lib/fonts/schroffer_mono/fonts/WOFF2/SchrofferMono-Regular.woff2");
-}
-@font-face {
-	font-family: "acrylic";
-	src: url("$lib/fonts/acrylic/Acrylic-1.0.0.otf");
-}
-@font-face {
-	font-family: "HayuFont";
-	src: url("$lib/fonts/HayuFont/HayuFont.otf");
-}
-@font-face {
-	font-family: "vergilia";
-	src: url("$lib/fonts/vergilia/vergilia.ttf");
-}
-@font-face {
-	font-family: "goatsica";
-	src: url("$lib/fonts/Goatsica/Goatsica-Regular.woff2");
-}
-@font-face {
-	font-family: "geneva";
-	src: url("$lib/fonts/mac/Helvetica-14.ttf");
-}
-
 /* GLOBALS */
 :root {
 	--color-bg: #232020;
@@ -67,6 +29,10 @@
 }
 
 html, body {
+	min-height: 100vh;
+	background: linear-gradient(60% var(--color-bg), 100% black) fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: var(--color-bg);
 	color: var(--color-fg);
 	font-family: "departure-mono";
@@ -119,10 +85,10 @@ select {
 
 /* RESPONSIVENESS */
 .desktop-only {
-	display: unset;
+	display: unset !important;
 }
 .mobile-only {
-	display: none;
+	display: none !important;
 }
 
 @media screen and (max-width: 728px) {
@@ -131,9 +97,47 @@ select {
 	}
 
 	.desktop-only {
-		display: none;
+		display: none !important;
 	}
 	.mobile-only {
-		display: unset;
+		display: unset !important;
 	}
+}
+
+/* FONTS */
+@font-face {
+	font-family: "departure-mono";
+	src: url("$lib/fonts/departure_mono/DepartureMono-Regular.otf");
+}
+@font-face {
+	font-family: "fustat";
+	src: url("$lib/fonts/Fustat/Fustat[wght].ttf");
+}
+@font-face {
+	font-family: "NoseTransport";
+	src: url("$lib/fonts/Nose-Transport/Web/NoseTransport9-RegularDot.woff2");
+}
+@font-face {
+	font-family: "schroffer_mono";
+	src: url("$lib/fonts/schroffer_mono/fonts/WOFF2/SchrofferMono-Regular.woff2");
+}
+@font-face {
+	font-family: "acrylic";
+	src: url("$lib/fonts/acrylic/Acrylic-1.0.0.otf");
+}
+@font-face {
+	font-family: "HayuFont";
+	src: url("$lib/fonts/HayuFont/HayuFont.otf");
+}
+@font-face {
+	font-family: "vergilia";
+	src: url("$lib/fonts/vergilia/vergilia.ttf");
+}
+@font-face {
+	font-family: "goatsica";
+	src: url("$lib/fonts/Goatsica/Goatsica-Regular.woff2");
+}
+@font-face {
+	font-family: "geneva";
+	src: url("$lib/fonts/mac/Helvetica-14.ttf");
 }
