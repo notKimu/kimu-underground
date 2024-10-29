@@ -1,5 +1,10 @@
-import { defineConfig } from 'mdsx';
- 
+import { defineConfig } from "mdsx";
+
 export const mdsxConfig = defineConfig({
-	extensions: ['.md'],
+  extensions: [".md"],
+  blueprints: {
+    default: {
+      path: "src/lib/blueprints/story.svelte",
+    },
+  },
 });

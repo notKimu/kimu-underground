@@ -44,7 +44,6 @@
     }
 
     .content {
-        font-family: "fustat";
         margin-top: var(--padding-x);
     }
 </style>
