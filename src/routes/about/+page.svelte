@@ -1,12 +1,11 @@
 <script lang="ts">
   import { _ } from "svelte-i18n";
   import Separator from "$lib/components/Separator.svelte";
+  import CharacterStats from "$lib/components/about/CharacterStats.svelte";
   import StoryEntry from "$lib/components/about/StoryEntry.svelte";
   import Flags from "$lib/components/about/Flags.svelte";
-  // Images
   import Inventory from "$lib/components/about/Inventory.svelte";
   import { onMount } from "svelte";
-  import CharacterStats from "$lib/components/about/CharacterStats.svelte";
 
   let selectedProperty: "presentation" | "flags" | "inventory" | "" =
     "presentation";

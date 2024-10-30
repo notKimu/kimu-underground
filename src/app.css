@@ -1,143 +1,144 @@
 /* GLOBALS */
 :root {
-	--color-bg: #232020;
-	--color-dark: #131112;
-	--color-fg: #f5f5f5;
-	--color-accent: #F56476;
-	--color-border: #d7d7d7;
-	--color-warning: #F564764f;
+  --color-bg: #232020;
+  --color-dark: #131112;
+  --color-fg: #f5f5f5;
+  --color-accent: #f56476;
+  --color-border: #d7d7d7;
+  --color-warning: #f564764f;
 
-	--padding-s: .5rem;
-	--padding-m: 1rem;
-	--padding-x: 1.5rem;
-	--padding-xl: 3rem;
-	--padding-main-x: clamp(1rem, 20vw, 20rem);
-	--padding-main-y: 3rem;
+  --padding-s: 0.5rem;
+  --padding-m: 1rem;
+  --padding-x: 1.5rem;
+  --padding-xl: 3rem;
+  --padding-main-x: clamp(1rem, 20vw, 20rem);
+  --padding-main-y: 3rem;
 
-	--header-height: 4rem;
-	--sidebar-width: 10rem;
+  --header-height: 4rem;
+  --sidebar-width: 10rem;
 
-	--border-width: .1rem;
+  --border-width: 0.1rem;
 }
 
 * {
-	box-sizing: border-box;
-	color: var(--color-fg);
-	margin: 0;
-	padding: 0;
-	transition: .15s;
+  box-sizing: border-box;
+  color: var(--color-fg);
+  margin: 0;
+  padding: 0;
+  transition: 0.15s;
 }
 
-html, body {
-	min-height: 100vh;
-	background: linear-gradient(60% var(--color-bg), 100% black) fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: var(--color-bg);
-	color: var(--color-fg);
-	font-family: "departure-mono";
+html,
+body {
+  min-height: 100vh;
+  background: linear-gradient(60% var(--color-bg), 100% black) fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: "departure-mono";
 }
 
 main {
-	padding: var(--padding-main-y) var(--padding-main-x);
+  padding: var(--padding-main-y) var(--padding-main-x);
 }
 
 /* TEXT */
 .title {
-	font-family: "vergilia";
-	font-size: clamp(2rem, 6vw, 3.5rem);
-	text-align: center;
-	position: relative;
+  font-family: "vergilia";
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  text-align: center;
+  position: relative;
 }
 
 a {
-	text-decoration-color: transparent;
-	text-decoration-thickness: .1rem;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 0.1rem;
 }
 a:hover {
-	text-decoration-color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
 }
 
 .no-deco {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* BUTTONS */
 button {
-	cursor: pointer;
-	background: none;
-	border: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 select {
-	background-color: transparent;
-	border: none;
-	font-family: "departure-mono";
+  background-color: transparent;
+  border: none;
+  font-family: "departure-mono";
 }
 
 /* LIGHT THEME */
 .light-theme {
-	--color-bg: #FAE8EB;
-	--color-fg: #232020;
-	--color-accent: #A594F9;
-	--color-border: #8d7d75;
+  --color-bg: #fae8eb;
+  --color-fg: #232020;
+  --color-accent: #a594f9;
+  --color-border: #8d7d75;
 }
 
 /* RESPONSIVENESS */
 .desktop-only {
-	display: unset !important;
+  display: unset !important;
 }
 .mobile-only {
-	display: none !important;
+  display: none !important;
 }
 
 @media screen and (max-width: 728px) {
-	:root {
-		--padding-main-x: 1rem;
-	}
+  :root {
+    --padding-main-x: 1rem;
+  }
 
-	.desktop-only {
-		display: none !important;
-	}
-	.mobile-only {
-		display: unset !important;
-	}
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: unset !important;
+  }
 }
 
 /* FONTS */
 @font-face {
-	font-family: "departure-mono";
-	src: url("$lib/fonts/departure_mono/DepartureMono-Regular.otf");
+  font-family: "departure-mono";
+  src: url("$lib/fonts/departure_mono/DepartureMono-Regular.otf");
 }
 @font-face {
-	font-family: "fustat";
-	src: url("$lib/fonts/Fustat/Fustat[wght].ttf");
+  font-family: "fustat";
+  src: url("$lib/fonts/Fustat/Fustat[wght].ttf");
 }
 @font-face {
-	font-family: "NoseTransport";
-	src: url("$lib/fonts/Nose-Transport/Web/NoseTransport9-RegularDot.woff2");
+  font-family: "NoseTransport";
+  src: url("$lib/fonts/Nose-Transport/Web/NoseTransport9-RegularDot.woff2");
 }
 @font-face {
-	font-family: "schroffer_mono";
-	src: url("$lib/fonts/schroffer_mono/fonts/WOFF2/SchrofferMono-Regular.woff2");
+  font-family: "schroffer_mono";
+  src: url("$lib/fonts/schroffer_mono/fonts/WOFF2/SchrofferMono-Regular.woff2");
 }
 @font-face {
-	font-family: "acrylic";
-	src: url("$lib/fonts/acrylic/Acrylic-1.0.0.otf");
+  font-family: "acrylic";
+  src: url("$lib/fonts/acrylic/Acrylic-1.0.0.otf");
 }
 @font-face {
-	font-family: "HayuFont";
-	src: url("$lib/fonts/HayuFont/HayuFont.otf");
+  font-family: "HayuFont";
+  src: url("$lib/fonts/HayuFont/HayuFont.otf");
 }
 @font-face {
-	font-family: "vergilia";
-	src: url("$lib/fonts/vergilia/vergilia.ttf");
+  font-family: "vergilia";
+  src: url("$lib/fonts/vergilia/vergilia.ttf");
 }
 @font-face {
-	font-family: "goatsica";
-	src: url("$lib/fonts/Goatsica/Goatsica-Regular.woff2");
+  font-family: "goatsica";
+  src: url("$lib/fonts/Goatsica/Goatsica-Regular.woff2");
 }
 @font-face {
-	font-family: "geneva";
-	src: url("$lib/fonts/mac/Helvetica-14.ttf");
+  font-family: "geneva";
+  src: url("$lib/fonts/mac/Helvetica-14.ttf");
 }

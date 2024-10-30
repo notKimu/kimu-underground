@@ -1,11 +1,11 @@
 <script>
   import Separator from "../Separator.svelte";
   // Images
-  import KimuStand from "$lib/images/V4flower.webp";
+  import Stand from "$lib/images/bocchi_stand_badass.webp";
 </script>
 
 <div class="about-character-view">
-  <img class="about-character-image" src={KimuStand} alt="Character" />
+  <img class="about-character-image" src={Stand} alt="Character" />
 
   <Separator margin={false} />
 
