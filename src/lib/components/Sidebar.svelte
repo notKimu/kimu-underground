@@ -9,18 +9,6 @@
       <h3>Filesystem</h3>
     </div>
 
-    <a class="sidebar-link" href="/">
-      <svg
-        class="sidebar-link-icon"
-        viewBox="0 0 16 16"
-        xmlns="http://www.w3.org/2000/svg"
-        ><path
-          d="M11 14v-4H5v4H3V8h10v6h-2 3V2H4v4h8V2h-2v2H6V2H2v12h3zM0 0h16v16H0V0z"
-          fill-rule="evenodd"
-        /></svg
-      >
-      <p>{$_("page.sidebar.home")}</p>
-    </a>
     <a class="sidebar-link" href="/about">
       <svg
         class="sidebar-link-icon"
@@ -76,7 +64,7 @@
     class={`switch ${isOpen ? "switch-open" : ""}`}
     on:click={() => (isOpen = !isOpen)}
   >
-    <p>>></p>
+    <svg class="switch-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z"/></svg>
   </button>
 </div>
 
@@ -136,5 +124,13 @@
   }
   .switch-open p {
     transform: rotate(180deg);
+  }
+  .switch-open .switch-icon {
+    transform: rotate(90deg);
+  }
+
+  .switch-icon {
+    width: 1.5rem;
+    fill: var(--color-fg);
   }
 </style>

@@ -1,10 +1,10 @@
 <script lang="ts">
   import "$lib/i18n";
+  import "../app.css";
   import { onMount } from "svelte";
   import { isLoading, locale } from "svelte-i18n";
   import Header from "$lib/components/Header.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
-  import "../app.css";
   // Images
   import GuraSpin from "$lib/images/gawr-spin.gif";
 

@@ -11,7 +11,7 @@
 <header>
   <a href="/" class="titlebar">
     <img class="titlebar-image" src={KimuFace} alt="" />
-    <h1>Kimu</h1>
+    <h2>Kimu</h2>
   </a>
 
   <div class="social">
@@ -104,7 +104,9 @@
   }
 
   .social-link {
-    height: 1.7em;
+    display: grid;
+    place-content: center;
+    height: 1.3em;
   }
   .social-link-color {
     fill: var(--color-border);
