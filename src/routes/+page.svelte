@@ -2,6 +2,7 @@
   import { _ } from "svelte-i18n";
   import WavyText from "$lib/components/WavyText.svelte";
   import Separator from "$lib/components/Separator.svelte";
+  import Spells from "$lib/components/index/Spells.svelte";
 </script>
 
 <svelte:head>
@@ -14,25 +15,96 @@
 
 <Separator />
 
-<div class="text-container">
+<div class="container">
+  <div class="character-container">
+    <div class="character-dialog-container">
+      <img
+        class="character-img"
+        src="https://github.com/notkimu.png"
+        alt="Profile of Kimu on Github"
+      />
+
+      <div class="character-dialog">
+        <!-- Connector for the speech balloon -->
+        <svg
+          class="character-dialog-connector"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          ><path d="M20.697 24L9.303 16.003 20.697 8z" /></svg
+        >
+
+        <h3 class="character-dialog-name">Kimu</h3>
+        <p>Welcome to my place! =w=</p>
+      </div>
+    </div>
+
+    <div class="character-spells-container">
+      <Spells maxSlots={4} usedSlots={3} level={1} />
+      <Spells maxSlots={3} usedSlots={1} level={2} />
+      <Spells maxSlots={3} usedSlots={2} level={3} />
+    </div>
+  </div>
+
   <p>{@html $_("page.home.body")}</p>
-  
+
   <div class="vim-title">
     <p>index.md</p>
     <p>1,1</p>
     <p>All</p>
   </div>
+
+  <h4>Socials</h4>
 </div>
 
-<h4>Socials</h4>
-
 <style>
-  .text-container {
+  .container {
     display: flex;
     flex-direction: column;
     gap: var(--padding-x);
   }
 
+  /* CHARACTER */
+  .character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--padding-m);
+  }
+
+  .character-dialog-container {
+    display: grid;
+    grid-template-columns: 5rem auto;
+    gap: var(--padding-x);
+  }
+
+  .character-img {
+    width: 100%;
+  }
+
+  .character-dialog {
+    position: relative;
+    width: fit-content;
+    padding: var(--padding-m);
+    border: var(--color-border) dashed var(--border-width);
+  }
+
+  .character-dialog-connector {
+    position: absolute;
+    left: -1.1rem;
+    height: 1.7rem;
+    fill: var(--color-border);
+  }
+
+  .character-spells-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: var(--padding-s);
+    margin-left: auto;
+  }
+
+  /* SOCIALS */
   .vim-title {
     width: 100%;
     display: grid;
@@ -42,5 +114,13 @@
   .vim-title p {
     color: var(--color-bg);
     padding: 0 var(--padding-s);
+  }
+
+  @media screen and (max-width: 728px) {
+    .character-spells-container {
+      width: 100%;
+      align-items: unset;
+      margin-left: unset;
+    }
   }
 </style>

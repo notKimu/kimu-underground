@@ -154,6 +154,9 @@
     border-left: none;
     padding: var(--padding-s);
   }
+  .about-character-property:nth-child(2) {
+    border-top: none;
+  }
   .about-character-property:not(:last-child) {
     border-bottom: none;
   }

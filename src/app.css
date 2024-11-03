@@ -1,17 +1,17 @@
 /* GLOBALS */
 :root {
-  --color-bg: #493843;
-  --color-dark: #32262e;
-  --color-fg: #F1E4E8;
-  --color-accent: #ff6378;
-  --color-border: #bcb3b6;
-  --color-warning: #f564764f;
+  --color-bg: #0c0a0c;
+  --color-dark: #151013;
+  --color-fg: hsl(0, 0%, 99%);
+  --color-accent: #a14591;
+  --color-border: #422391;
+  --color-warning: #AB49674f;
 
   --padding-s: 0.5rem;
   --padding-m: 1rem;
   --padding-x: 1.5rem;
   --padding-xl: 3rem;
-  --padding-main-x: clamp(1rem, 10vw, 20rem);
+  --padding-main-x: clamp(1rem, 15vw, 20rem);
   --padding-main-y: 3rem;
 
   --header-height: 4rem;
@@ -28,7 +28,7 @@
   transition: 0.15s;
 }
 
-html,
+
 body {
   min-height: 100vh;
   background: linear-gradient(60% var(--color-bg), 100% black) fixed;

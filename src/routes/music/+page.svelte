@@ -230,6 +230,6 @@
   .album-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--padding-x);
+    gap: var(--padding-m);
   }
 </style>

@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--padding-s);
-    border: var(--border-width) solid var(--color-border);
+    border-right: var(--border-width) solid var(--color-border);
     padding: var(--padding-m);
   }
   .info-separator {
