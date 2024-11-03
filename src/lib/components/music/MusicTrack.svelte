@@ -8,8 +8,8 @@
 <a href={link} target="_blank" class="track-container">
   <img src={cover} alt="" />
   <div class="track-details">
-    <h4>{title}</h4>
-    <h5>{artist}</h5>
+    <h4 class="track-details-title">{title}</h4>
+    <h5 class="track-details-artist">{artist}</h5>
   </div>
 </a>
 
@@ -24,6 +24,10 @@
 
   .track-container img {
     width: clamp(4rem, 10vw, 7rem);
+  }
+
+  .track-details-title {
+    font-size: clamp(.5rem, 15vw, .9rem);
   }
 
   @media screen and (max-width: 728px) {
