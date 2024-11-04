@@ -12,7 +12,7 @@
         0{num}
     </div>
 
-    <svg class="story-selector" fill="#fae8eb" width="2rem" height="2rem" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="m 12.000001,8 v 4 H 8 v 4 H 4 v 4 H 0 V 0 h 4 v 4 h 4 v 4 z" /></svg>
+    <svg class="story-selector" fill="var(--color-fg)" width="2rem" height="2rem" viewBox="0 0 12 20" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="m 12.000001,8 v 4 H 8 v 4 H 4 v 4 H 0 V 0 h 4 v 4 h 4 v 4 z" /></svg>
 
 </a>
 

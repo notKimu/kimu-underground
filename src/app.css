@@ -2,7 +2,7 @@
 :root {
   --color-bg: #0c0a0c;
   --color-dark: #000000;
-  --color-fg: hsl(0, 0%, 99%);
+  --color-fg: #fcfcfc;
   --color-accent: #a14591;
   --color-border: #422391;
   --color-warning: #a145914f;
@@ -76,14 +76,6 @@ select {
   font-family: "departure-mono";
 }
 
-/* LIGHT THEME */
-.light-theme {
-  --color-bg: #fae8eb;
-  --color-fg: #232020;
-  --color-accent: #a594f9;
-  --color-border: #8d7d75;
-}
-
 /* RESPONSIVENESS */
 .desktop-only {
   display: unset !important;
@@ -102,6 +94,18 @@ select {
   }
   .mobile-only {
     display: unset !important;
+  }
+}
+
+/* COLOR MODES */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-bg: #F5EFFF;
+    --color-dark: #dfd4f1;
+    --color-fg: #1C1D21;
+    --color-accent: #F7567C;
+    --color-border: #8377D1;
+    --color-warning: #F7567C4f;
   }
 }
 

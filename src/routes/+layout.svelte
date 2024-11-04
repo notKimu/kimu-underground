@@ -32,30 +32,6 @@
 </div>
 
 <style>
-  /* Makes hard reading the stories */
-  /* .scanlines {
-		height: 100vh;
-		width: 100vw;
-		position: fixed;
-		top: 0;
-		left: 0;
-		pointer-events: none;
-		background: repeating-linear-gradient(#00000000, #00000000 7px, #0000003e 7px, #0000003e 8px);
-	} */
-
-  /* .polka {
-    height: 100vh;
-		width: 100vw;
-		position: fixed;
-		top: 0;
-		left: 0;
-		pointer-events: none;
-    opacity: 0.2;
-    background-image:  radial-gradient(var(--color-border) 0.5px, transparent 0.5px), radial-gradient(var(--color-border) 0.5px, #00000000 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
-  } */
-
   .polka {
     height: 100vh;
 		width: 100vw;
@@ -83,5 +59,15 @@
 
   .loading-img {
     width: clamp(7rem, 10vw, 15%);
+  }
+
+  /* LIGHT MODE */
+  @media (prefers-color-scheme: light) {
+    .polka {
+      opacity: .1;
+      mask-image: -moz-linear-gradient(180deg, transparent 0%, rgba(0,0,0,1) 100%);
+      mask-image: -webkit-linear-gradient(180deg, transparent 0%, rgba(0,0,0,1) 100%);
+      mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,1) 100%);
+    }
   }
 </style>
