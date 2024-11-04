@@ -3,6 +3,7 @@
   import WavyText from "$lib/components/WavyText.svelte";
   import Separator from "$lib/components/Separator.svelte";
   import Spells from "$lib/components/index/Spells.svelte";
+  import Cards from "$lib/components/index/Cards.svelte";
 </script>
 
 <svelte:head>
@@ -53,7 +54,9 @@
     <p>All</p>
   </div>
 
-  <h4>Socials</h4>
+  <div class="cards-container">
+    <Cards icon={""} name={"Socials"} link={""} />
+  </div>
 </div>
 
 <style>
@@ -114,6 +117,12 @@
   .vim-title p {
     color: var(--color-bg);
     padding: 0 var(--padding-s);
+  }
+
+  /* CARDS */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media screen and (max-width: 728px) {

@@ -1,11 +1,11 @@
 /* GLOBALS */
 :root {
   --color-bg: #0c0a0c;
-  --color-dark: #151013;
+  --color-dark: #000000;
   --color-fg: hsl(0, 0%, 99%);
   --color-accent: #a14591;
   --color-border: #422391;
-  --color-warning: #AB49674f;
+  --color-warning: #a145914f;
 
   --padding-s: 0.5rem;
   --padding-m: 1rem;
