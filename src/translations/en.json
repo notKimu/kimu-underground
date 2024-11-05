@@ -19,6 +19,9 @@
         "music": {
             "page-title": "Music I like",
             "title": "My fav music"
+        },
+        "games": {
+            "title": "My fav games"
         }
     }
 }

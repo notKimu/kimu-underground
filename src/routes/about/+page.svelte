@@ -190,5 +190,12 @@
       opacity: 0;
       pointer-events: none;
     }
+
+    .about-character-property:nth-child(2) {
+      border-top: var(--color-border) solid var(--border-width);
+    }
+    .about-character-property:nth-child(1) {
+      border-top: none;
+    }
   }
 </style>

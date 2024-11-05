@@ -63,7 +63,6 @@
 
   .spell {
     display: flex;
-    flex-direction: row;
     gap: var(--padding-s);
   }
 
@@ -72,5 +71,12 @@
     width: 100%;
     opacity: .5;
     background-color: var(--color-fg);
+  }
+
+  /* RESPONSIVENESS */
+  @media screen and (max-width: 728px) {
+    .spell {
+        flex-direction: row-reverse;
+    }
   }
 </style>

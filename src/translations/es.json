@@ -19,6 +19,9 @@
         "music": {
             "page-title": "Musicwa favorita",
             "title": "Musica que adoro"
+        },
+        "games": {
+            "title": "Videojueguitos"
         }
     }
 }

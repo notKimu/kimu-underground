@@ -6,6 +6,9 @@
   --color-accent: #a14591;
   --color-border: #422391;
   --color-warning: #a145914f;
+  --tier-s: #dfcc6e;
+  --tier-a: #8c8891;
+  --tier-b: var(--color-fg);
 
   --padding-s: 0.5rem;
   --padding-m: 1rem;
@@ -27,7 +30,6 @@
   padding: 0;
   transition: 0.15s;
 }
-
 
 body {
   min-height: 100vh;
@@ -100,12 +102,16 @@ select {
 /* COLOR MODES */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-bg: #F5EFFF;
+    --color-bg: #f5efff;
     --color-dark: #dfd4f1;
-    --color-fg: #1C1D21;
-    --color-accent: #F7567C;
-    --color-border: #8377D1;
-    --color-warning: #F7567C4f;
+    --color-fg: #1c1d21;
+    --color-accent: #f7567c;
+    --color-border: #8377d1;
+    --color-warning: #f7567c4f;
+
+    --tier-s: #ffe18d;
+    --tier-a: #e5baea;
+    --tier-b: var(--color-dark);
   }
 }
 
