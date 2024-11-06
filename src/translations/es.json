@@ -22,6 +22,9 @@
         },
         "games": {
             "title": "Videojueguitos"
+        },
+        "projects": {
+            "title": "Proyectos"
         }
     }
 }

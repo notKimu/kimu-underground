@@ -22,6 +22,9 @@
         },
         "games": {
             "title": "My fav games"
+        },
+        "projects": {
+            "title": "Projects"
         }
     }
 }
