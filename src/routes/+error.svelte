@@ -2,6 +2,10 @@
   import { page } from "$app/stores";
 </script>
 
+<svelte:head>
+  <title>ERROR !!!</title>
+</svelte:head>
+
 <div class="error-container">
   <div class="error-message">
     <svg

@@ -55,7 +55,12 @@
   </div>
 
   <div class="cards-container">
-    <Cards icon={""} name={"Socials"} link={""} />
+    <Cards icon={""} name={"Github"} link={"https://github.com/notkimu"} />
+    <Cards icon={""} name={"Twitter"} link={"https://x.com/notkimu"} />
+    <Cards icon={""} name={"Tracker"} link={"/tracker"} />
+    <Cards icon={""} name={"My Server"} link={"https://discord.gg/NfeXrQdXdE"} />
+    <Cards icon={""} name={"Donate :3"} link={"https://ko-fi.com/notkimu"} />
+    <Cards icon={""} name={"Youtube"} link={"https://www.youtube.com/@kimu_x64"} />
   </div>
 </div>
 
@@ -123,6 +128,7 @@
   .cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--padding-m);
   }
 
   @media screen and (max-width: 728px) {

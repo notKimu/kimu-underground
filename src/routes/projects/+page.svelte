@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>My projects</title>
+  <title>{$_("page.projects.title")}</title>
 </svelte:head>
 
 <h1 class="title">{$_("page.projects.title")}</h1>

@@ -13,7 +13,7 @@
     <span class="info-separator"
       ><b>Name</b>
       <p>:</p>
-      <p>kimu</p></span
+      <p>キム</p></span
     >
     <span class="info-separator"
       ><b>Level</b>
