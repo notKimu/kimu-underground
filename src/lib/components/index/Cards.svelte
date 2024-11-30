@@ -4,7 +4,7 @@
   export let link: string;
 </script>
 
-<a href={link} class="container">
+<a href={link} class="container" target="_blank">
   {@html icon}
   <h3>{name}</h3>
 </a>

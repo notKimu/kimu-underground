@@ -55,11 +55,11 @@
   </div>
 
   <div class="cards-container">
-    <Cards icon={""} name={"Github"} link={"https://github.com/notkimu"} />
-    <Cards icon={""} name={"Twitter"} link={"https://x.com/notkimu"} />
-    <Cards icon={""} name={"Tracker"} link={"/tracker"} />
-    <Cards icon={""} name={"My Server"} link={"https://discord.gg/NfeXrQdXdE"} />
+    <Cards icon={""} name={"Wishlist"} link={"https://skitter-swing-aed.notion.site/Wishlist-14b16e4aa6c68052ae40dca6bac0fbd4"} />
+    <Cards icon={""} name={"Game tracker"} link={"https://skitter-swing-aed.notion.site/Lista-de-juegos-14e16e4aa6c6801eb595c044fb4edf42"} />
+    <Cards icon={""} name={"Read list"} link={"https://skitter-swing-aed.notion.site/Lista-de-lectura-14c16e4aa6c680be80d2c02ef31844d6"} />
     <Cards icon={""} name={"Donate :3"} link={"https://ko-fi.com/notkimu"} />
+    <Cards icon={""} name={"My Server"} link={"https://discord.gg/NfeXrQdXdE"} />
     <Cards icon={""} name={"Youtube"} link={"https://www.youtube.com/@kimu_x64"} />
   </div>
 </div>
