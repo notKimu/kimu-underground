@@ -7,6 +7,7 @@
   import OuterWilds from "$lib/images/games/outer_wilds.png";
   import AHatInTime from "$lib/images/games/a_hat_in_time.png";
   import DarkSouls from "$lib/images/games/dark_souls.png";
+  import PokemonBlack from "$lib/images/games/pokemon_black.jpg";
   import Portal2 from "$lib/images/games/portal2.png";
   import RDR2 from "$lib/images/games/rdr2.png";
   import Metaphor from "$lib/images/games/metaphor.png";
@@ -33,6 +34,7 @@
 	<Game name={"Outer Wilds"} img={OuterWilds} tier={"s"} />
 	<Game name={"A Hat In Time"} img={AHatInTime} tier={"s"} />
 	<Game name={"Dark Souls"} img={DarkSouls} tier={"s"} />
+	<Game name={"Pokemon Black"} img={PokemonBlack} tier={"s"} />
 	<Game name={"Portal 2"} img={Portal2} tier={"s"} />
 	<Game name={"RDR 2"} img={RDR2} tier={"s"} />
 	<Game name={"Metaphor: ReFantazio"} img={Metaphor} tier={"s"} />
