@@ -1,7 +1,7 @@
 import { error } from "@sveltejs/kit";
 
 export async function load({ params }) {
-  const post = await import(`$lib/stories/${params.name}.md`).catch(() => {
+  const post = await import(`$lib/data/stories/${params.name}.md`).catch(() => {
     error(404, "That story hasn't been written... yet.");
   });
 

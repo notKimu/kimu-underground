@@ -118,37 +118,37 @@ select {
 /* FONTS */
 @font-face {
   font-family: "departure-mono";
-  src: url("$lib/fonts/departure_mono/DepartureMono-Regular.otf");
+  src: url("$lib/assets/fonts/departure_mono/DepartureMono-Regular.otf");
 }
 @font-face {
   font-family: "fustat";
-  src: url("$lib/fonts/Fustat/Fustat[wght].ttf");
+  src: url("$lib/assets/fonts/Fustat/Fustat[wght].ttf");
 }
 @font-face {
   font-family: "NoseTransport";
-  src: url("$lib/fonts/Nose-Transport/Web/NoseTransport9-RegularDot.woff2");
+  src: url("$lib/assets/fonts/Nose-Transport/Web/NoseTransport9-RegularDot.woff2");
 }
 @font-face {
   font-family: "schroffer_mono";
-  src: url("$lib/fonts/schroffer_mono/fonts/WOFF2/SchrofferMono-Regular.woff2");
+  src: url("$lib/assets/fonts/schroffer_mono/fonts/WOFF2/SchrofferMono-Regular.woff2");
 }
 @font-face {
   font-family: "acrylic";
-  src: url("$lib/fonts/acrylic/Acrylic-1.0.0.otf");
+  src: url("$lib/assets/fonts/acrylic/Acrylic-1.0.0.otf");
 }
 @font-face {
   font-family: "HayuFont";
-  src: url("$lib/fonts/HayuFont/HayuFont.otf");
+  src: url("$lib/assets/fonts/HayuFont/HayuFont.otf");
 }
 @font-face {
   font-family: "vergilia";
-  src: url("$lib/fonts/vergilia/vergilia.ttf");
+  src: url("$lib/assets/fonts/vergilia/vergilia.ttf");
 }
 @font-face {
   font-family: "goatsica";
-  src: url("$lib/fonts/Goatsica/Goatsica-Regular.woff2");
+  src: url("$lib/assets/fonts/Goatsica/Goatsica-Regular.woff2");
 }
 @font-face {
   font-family: "helvetica";
-  src: url("$lib/fonts/mac/Helvetica-14.ttf");
+  src: url("$lib/assets/fonts/mac/Helvetica-14.ttf");
 }

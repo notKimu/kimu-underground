@@ -3,22 +3,22 @@
   import Separator from "$lib/components/Separator.svelte";
   import Game from "$lib/components/games/Game.svelte";
   //   Images
-  import Oneshot from "$lib/images/games/oneshot_game_icon.png";
-  import OuterWilds from "$lib/images/games/outer_wilds.png";
-  import AHatInTime from "$lib/images/games/a_hat_in_time.png";
-  import DarkSouls from "$lib/images/games/dark_souls.png";
-  import PokemonBlack from "$lib/images/games/pokemon_black.jpg";
-  import Portal2 from "$lib/images/games/portal2.png";
-  import RDR2 from "$lib/images/games/rdr2.png";
-  import Metaphor from "$lib/images/games/metaphor.png";
-  import Minecraft from "$lib/images/games/minecraft.png";
-  import Persona5Royal from "$lib/images/games/persona_5_royal.png";
-  import GTAIV from "$lib/images/games/gta_iv.png";
-  import GTASA from "$lib/images/games/gta_sa.png";
-  import CSGO from "$lib/images/games/csgo.png";
-  import Portal from "$lib/images/games/portal_logo.png";
-  import GTAV from "$lib/images/games/gta_v.png";
-  import Skyrim from "$lib/images/games/skyrim.png";
+  import Oneshot from "$lib/assets/images/games/oneshot_game_icon.png";
+  import OuterWilds from "$lib/assets/images/games/outer_wilds.png";
+  import AHatInTime from "$lib/assets/images/games/a_hat_in_time.png";
+  import DarkSouls from "$lib/assets/images/games/dark_souls.png";
+  import PokemonBlack from "$lib/assets/images/games/pokemon_black.jpg";
+  import Portal2 from "$lib/assets/images/games/portal2.png";
+  import RDR2 from "$lib/assets/images/games/rdr2.png";
+  import Metaphor from "$lib/assets/images/games/metaphor.png";
+  import Minecraft from "$lib/assets/images/games/minecraft.png";
+  import Persona5Royal from "$lib/assets/images/games/persona_5_royal.png";
+  import GTAIV from "$lib/assets/images/games/gta_iv.png";
+  import GTASA from "$lib/assets/images/games/gta_sa.png";
+  import CSGO from "$lib/assets/images/games/csgo.png";
+  import Portal from "$lib/assets/images/games/portal_logo.png";
+  import GTAV from "$lib/assets/images/games/gta_v.png";
+  import Skyrim from "$lib/assets/images/games/skyrim.png";
 </script>
 
 <svelte:head>

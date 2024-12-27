@@ -1,7 +1,7 @@
 <script lang="ts">
-	import TransFlag from "$lib/images/trans_flag.webp";
-	import DemiFlag from "$lib/images/demi_flag.webp";
-	import AutisticCreature from "$lib/images/autistic_creature.webp";
+	import TransFlag from "$lib/assets/images/trans_flag.webp";
+	import DemiFlag from "$lib/assets/images/demi_flag.webp";
+	import AutisticCreature from "$lib/assets/images/autistic_creature.webp";
 </script>
 
 <div>

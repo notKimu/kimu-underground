@@ -1,7 +1,7 @@
 <script lang="ts">
-    import CameraPhoto from "$lib/images/camera.png";
-    import PhonePhoto from "$lib/images/mobile.png";
-    import DapPhoto from "$lib/images/mp3.png";
+    import CameraPhoto from "$lib/assets/images/camera.png";
+    import PhonePhoto from "$lib/assets/images/mobile.png";
+    import DapPhoto from "$lib/assets/images/mp3.png";
 </script>
 
 <div class="about-inventory">

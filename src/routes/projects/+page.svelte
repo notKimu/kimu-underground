@@ -3,11 +3,11 @@
   import Separator from "$lib/components/Separator.svelte";
   import Project from "$lib/components/projects/Project.svelte";
   // IMAGES
-  import Rubiu5 from "$lib/images/projects/rubiu5.webp";
-  import Archan from "$lib/images/projects/archan.webp";
-  import StarMC from "$lib/images/projects/starmc.png";
-  import DnDAbenyu from "$lib/images/projects/dnd_abenyu.webp";
-  import Ryoko from "$lib/images/projects/ryoko.webp";
+  import Rubiu5 from "$lib/assets/images/projects/rubiu5.webp";
+  import Archan from "$lib/assets/images/projects/archan.webp";
+  import StarMC from "$lib/assets/images/projects/starmc.png";
+  import DnDAbenyu from "$lib/assets/images/projects/dnd_abenyu.webp";
+  import Ryoko from "$lib/assets/images/projects/ryoko.webp";
 </script>
 
 <svelte:head>

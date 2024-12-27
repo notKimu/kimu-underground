@@ -1,7 +1,7 @@
 <script lang="ts">
   import { locale } from "svelte-i18n";
   // Images
-  import KimuFace from "$lib/images/kimucara.webp";
+  import KimuFace from "$lib/assets/images/kimucara.webp";
 
   function updateLocale() {
     localStorage.setItem("locale", $locale ?? "en");

@@ -1,7 +1,7 @@
 <script>
   import Separator from "../Separator.svelte";
   // Images
-  import Stand from "$lib/images/bocchi_stand_badass.webp";
+  import Stand from "$lib/assets/images/bocchi_stand_badass.webp";
 </script>
 
 <div class="about-character-view">

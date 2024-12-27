@@ -6,7 +6,7 @@
   import Header from "$lib/components/Header.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   // Images
-  import GuraSpin from "$lib/images/gawr-spin.gif";
+  import GuraSpin from "$lib/assets/images/gawr-spin.gif";
 
   onMount(() => {
     const savedLocale = localStorage.getItem("locale");
