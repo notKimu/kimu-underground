@@ -3,11 +3,12 @@
   import Separator from "$lib/components/Separator.svelte";
   import CharacterStats from "$lib/components/about/CharacterStats.svelte";
   import StoryEntry from "$lib/components/about/StoryEntry.svelte";
-  import Flags from "$lib/components/about/Flags.svelte";
+  import Tools from "$lib/components/about/Tools.svelte";
+  import Apps from "$lib/components/about/Apps.svelte";
   import Inventory from "$lib/components/about/Inventory.svelte";
   import { onMount } from "svelte";
 
-  let selectedProperty: "presentation" | "flags" | "inventory" | "" =
+  let selectedProperty: "presentation" | "tools" | "apps" | "inventory" | "" =
     "presentation";
 
   onMount(() => {
@@ -64,8 +65,8 @@
       </button>
 
       <button
-        class={`${selectedProperty === "flags" ? "property-selector-active" : ""} about-character-property`}
-        on:click={() => (selectedProperty = "flags")}
+        class={`${selectedProperty === "tools" ? "property-selector-active" : ""} about-character-property`}
+        on:click={() => (selectedProperty = "tools")}
       >
         <svg
           class="property-selector"
@@ -73,7 +74,23 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M2 9v7H0V0h16v9H2zm0-7v5h5V2H2zm7 0v5h5V2H9z"
+            d="M0 0h16v16H0V0zm2 2v2h2V2H2zm4 0v2h8V2H6zM2 6v8h12V6H2z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </button>
+
+      <button
+        class={`${selectedProperty === "apps" ? "property-selector-active" : ""} about-character-property`}
+        on:click={() => (selectedProperty = "apps")}
+      >
+        <svg
+          class="property-selector"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h7v7H0V0zm2 2v3h3V2H2zM0 9h7v7H0V9zm9-9h7v7H9V0zm2 2v3h3V2h-3zM9 9h7v7H9V9zm2 2v3h3v-3h-3zm-9 0v3h3v-3H2z"
             fill-rule="evenodd"
           />
         </svg>
@@ -101,8 +118,10 @@
     <h2>{selectedProperty}</h2>
     {#if selectedProperty === "presentation"}
       <p>{@html $_("page.about.presentation")}</p>
-    {:else if selectedProperty === "flags"}
-      <Flags />
+    {:else if selectedProperty === "tools"}
+      <Tools />
+    {:else if selectedProperty === "apps"}
+      <Apps />
     {:else if selectedProperty === "inventory"}
       <Inventory />
     {/if}

@@ -21,7 +21,7 @@
   
   <div class="window-container">
     <div class="window-titlebar">
-      <p>~/iPod</p>
+      <p>~/iPod - {data.playlistData.name}</p>
       <div class="window-titlebar-icon-container">
         <svg
           class="window-titlebar-icon"

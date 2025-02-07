@@ -14,6 +14,8 @@
 
 <Separator />
 
+<h3>Playlists: 3</h3>
+
 <div class="window-container">
   <div class="window-titlebar">
     <p>~/iPod</p>
@@ -76,6 +78,7 @@
   <div class="window-content">
     <div class="playlist-container">
       <Playlist name="kimu" playlistData={data.playlists.kimuPlaylist} />
+      <Playlist name="lpr-309" playlistData={data.playlists.lprPlaylist} />
       <Playlist name="mchn" playlistData={data.playlists.mchnPlaylist} />
     </div>
   </div>
