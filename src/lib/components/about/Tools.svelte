@@ -1,75 +1,75 @@
 <script lang="ts">
-  import Git from "$lib/assets/images/git.png";
-  import Bash from "$lib/assets/images/bash.png";
-  import Rust from "$lib/assets/images/rust.png";
-  import TypeScript from "$lib/assets/images/typescript.png";
-  import JavaScript from "$lib/assets/images/javascript.png";
-  import C from "$lib/assets/images/C.png";
-  import Python from "$lib/assets/images/python.png";
-  import Java from "$lib/assets/images/java.png";
-  import Go from "$lib/assets/images/golang.png";
-  import MySql from "$lib/assets/images/mysql.png";
-  import Postgres from "$lib/assets/images/postgres.png";
-  import MondongoDB from "$lib/assets/images/mondongodb.png";
-  import Redis from "$lib/assets/images/redis.png";
-  import Docker from "$lib/assets/images/docker.png";
+  import GitImg from "$lib/assets/images/tools/git.webp?enhanced";
+  import BashImg from "$lib/assets/images/tools/bash.webp?enhanced";
+  import RustImg from "$lib/assets/images/tools/rust.webp?enhanced";
+  import TypeScriptImg from "$lib/assets/images/tools/typescript.webp?enhanced";
+  import JavaScriptImg from "$lib/assets/images/tools/javascript.webp?enhanced";
+  import CImg from "$lib/assets/images/tools/C.webp?enhanced";
+  import PythonImg from "$lib/assets/images/tools/python.webp?enhanced";
+  import JavaImg from "$lib/assets/images/tools/java.webp?enhanced";
+  import GoImg from "$lib/assets/images/tools/golang.webp?enhanced";
+  import MySqlImg from "$lib/assets/images/tools/mysql.webp?enhanced";
+  import PostgresImg from "$lib/assets/images/tools/postgres.webp?enhanced";
+  import MondongoDBImg from "$lib/assets/images/tools/mondongodb.webp?enhanced";
+  import RedisImg from "$lib/assets/images/tools/redis.webp?enhanced";
+  import DockerImg from "$lib/assets/images/tools/docker.webp?enhanced";
 </script>
 
 <div class="tools-container">
   <div class="tool-entry">
-    <img src={Rust} alt="" />
+    <enhanced:img src={RustImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={C} alt="" />
+    <enhanced:img src={CImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={TypeScript} alt="" />
+    <enhanced:img src={TypeScriptImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={JavaScript} alt="" />
+    <enhanced:img src={JavaScriptImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Python} alt="" />
+    <enhanced:img src={PythonImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Java} alt="" />
+    <enhanced:img src={JavaImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Go} alt="" />
+    <enhanced:img src={GoImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={MySql} alt="" />
+    <enhanced:img src={MySqlImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Postgres} alt="" />
+    <enhanced:img src={PostgresImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={MondongoDB} alt="" />
+    <enhanced:img src={MondongoDBImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Redis} alt="" />
+    <enhanced:img src={RedisImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Docker} alt="" />
+    <enhanced:img src={DockerImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Git} alt="" />
+    <enhanced:img src={GitImg} alt="" loading="lazy" />
   </div>
 
   <div class="tool-entry">
-    <img src={Bash} alt="" />
+    <enhanced:img src={BashImg} alt="" loading="lazy" />
   </div>
 </div>
 
@@ -81,10 +81,11 @@
   }
 
   .tool-entry {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
   }
   .tool-entry img {
+    height: 100%;
     width: 100%;
   }
 </style>

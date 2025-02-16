@@ -1,11 +1,11 @@
 <script>
   import Separator from "../Separator.svelte";
   // Images
-  import Stand from "$lib/assets/images/bocchi_stand_badass.webp";
+  import StandImg from "$lib/assets/images/bocchi_stand_badass.webp?enhanced";
 </script>
 
 <div class="about-character-view">
-  <img class="about-character-image" src={Stand} alt="Character" />
+  <enhanced:img class="about-character-image" src={StandImg} alt="Character" />
 
   <Separator margin={false} />
 
@@ -47,11 +47,18 @@
     border-right: var(--border-width) solid var(--color-border);
     padding: var(--padding-m);
   }
+
+
   .info-separator {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
   }
   .info-separator p:last-child {
     text-align: right;
+  }
+
+  .about-character-image {
+    height: 100%;
+    width: 100%;
   }
 </style>

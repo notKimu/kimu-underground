@@ -7,7 +7,7 @@
 
 <div class="game" style={`border-left: .5rem solid var(--tier-${tier});`}>
   <div class="game-info">
-    <img class={darkMode ? "invert" : ""} src={img} alt="" />
+    <enhanced:img class={darkMode ? "invert" : ""} src={img} alt="" loading="lazy" />
     <h2>{name}</h2>
   </div>
 
@@ -33,6 +33,7 @@
   }
   .game-info img {
     height: 4rem;
+    width: auto;
   }
 
   .game-tier {

@@ -5,7 +5,7 @@
 </script>
 
 <div class="project-container">
-  <img src={img} alt="" />
+  <enhanced:img src={img} alt="" />
 
   <div class="project-info">
     <h3>{name}</h3>
@@ -36,6 +36,11 @@
     opacity: 0.1;
     transform: skewX(-25deg);
     animation: shine 2s;
+  }
+  
+  .project-container img {
+    height: 100%;
+    width: calc(5rem - (var(--padding-s)*2));
   }
 
   @keyframes shine {

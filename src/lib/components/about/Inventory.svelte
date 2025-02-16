@@ -1,22 +1,36 @@
 <script lang="ts">
-    import CameraPhoto from "$lib/assets/images/camera.png";
-    import PhonePhoto from "$lib/assets/images/mobile.png";
-    import DapPhoto from "$lib/assets/images/mp3.png";
+    import CameraImg from "$lib/assets/images/inventory/camera.webp?enhanced";
+    import PhoneImg from "$lib/assets/images/inventory/mobile.webp?enhanced";
+    import IpodImg from "$lib/assets/images/inventory/ipod-mini.webp?enhanced";
+    import DapImg from "$lib/assets/images/inventory/mp3.webp?enhanced";
 </script>
 
 <div class="about-inventory">
     <div class="inventory-item">
-        <img src={CameraPhoto} alt="">
+        <div>
+            <enhanced:img src={CameraImg} alt="" loading="lazy">
+        </div>
         <p>Nikon L19</p>
     </div>
 
     <div class="inventory-item">
-        <img src={PhonePhoto} alt="">
+        <div>
+            <enhanced:img src={PhoneImg} alt="" loading="lazy">
+        </div>
         <p>Mi Mix 2s</p>
     </div>
 
     <div class="inventory-item">
-        <img src={DapPhoto} alt="">
+        <div>
+            <enhanced:img src={IpodImg} alt="" loading="lazy">
+        </div>
+        <p>iPod Mini</p>
+    </div>
+
+    <div class="inventory-item">
+        <div>
+            <enhanced:img src={DapImg} alt="" loading="lazy">
+        </div>
         <p>Fiio M3K</p>
     </div>
 </div>
@@ -29,14 +43,14 @@
     }
 
     .inventory-item {
+        height: fit-content;
         display: grid;
         grid-template-rows: 1fr 2rem;
+        gap: var(--padding-m);
     }
     .inventory-item img {
+        height: auto;
         width: 100%;
         image-rendering: pixelated;
-    }
-    .inventory-item p {
-        margin-top: auto;
     }
 </style>

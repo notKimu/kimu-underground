@@ -1,7 +1,7 @@
 <script lang="ts">
   import { locale } from "svelte-i18n";
   // Images
-  import KimuFace from "$lib/assets/images/kimucara.webp";
+  import KimuFaceImg from "$lib/assets/images/kimucara.webp";
 
   function updateLocale() {
     localStorage.setItem("locale", $locale ?? "en");
@@ -10,7 +10,7 @@
 
 <header>
   <a href="/" class="titlebar">
-    <img class="titlebar-image" src={KimuFace} alt="" />
+    <img class="titlebar-image" src={KimuFaceImg} alt="" />
     <h2>Kimu</h2>
   </a>
 

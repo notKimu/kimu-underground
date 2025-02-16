@@ -6,7 +6,7 @@
   import Header from "$lib/components/Header.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   // Images
-  import GuraSpin from "$lib/assets/images/gawr-spin.gif";
+  import GuraSpinImg from "$lib/assets/images/gawr-spin.gif";
 
   onMount(() => {
     const savedLocale = localStorage.getItem("locale");
@@ -19,7 +19,7 @@
 
   {#if $isLoading}
     <center class="loading-container">
-      <img class="loading-img" src={GuraSpin} alt="" />
+      <img class="loading-img" src={GuraSpinImg} alt="" loading="lazy" />
       <h1>...</h1>
     </center>
   {:else}

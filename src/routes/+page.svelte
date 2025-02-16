@@ -4,6 +4,8 @@
   import Separator from "$lib/components/Separator.svelte";
   import Spells from "$lib/components/index/Spells.svelte";
   import Cards from "$lib/components/index/Cards.svelte";
+  // Images
+  import KimuGithubImg from "$lib/assets/images/kimu-github.webp?enhanced";
 </script>
 
 <svelte:head>
@@ -19,10 +21,11 @@
 <div class="container">
   <div class="character-container">
     <div class="character-dialog-container">
-      <img
+      <enhanced:img
         class="character-img"
-        src="https://github.com/notkimu.png"
+        src={KimuGithubImg}
         alt="Profile of Kimu on Github"
+        loading="lazy"
       />
 
       <div class="character-dialog">
@@ -107,6 +110,7 @@
 
   .character-img {
     width: 100%;
+    height: auto;
   }
 
   .character-dialog {

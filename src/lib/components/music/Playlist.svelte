@@ -8,7 +8,7 @@
 
 <a href={`/music/playlist/${name}`} class="playlist-container">
   <div class="playlist-cover">
-    <img src={playlistData.images[0].url} alt="" class="playlist-img" />
+    <img src={playlistData.images[0].url} alt="" class="playlist-img" loading="lazy" />
   </div>
   <div class="playlist-data">
     <h1>{playlistData.name}</h1>
@@ -32,6 +32,7 @@
   }
 
   .playlist-cover {
+    height: 100%;
     z-index: 10;
   }
   .playlist-cover img {
@@ -52,6 +53,7 @@
 
   .playlist-fill {
     position: absolute;
+    height: 100%;
     width: 100%;
     top: -50%;
     left: 0;
