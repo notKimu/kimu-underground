@@ -20,6 +20,7 @@
     display: flex;
     gap: var(--padding-s);
     background-color: var(--color-dark);
+    gap: var(--padding-s);
     overflow: hidden;
     padding: var(--padding-s);
   }

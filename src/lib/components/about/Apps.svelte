@@ -56,6 +56,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        gap: var(--padding-m);
         padding: var(--padding-m);
     }
     .app-entry:not(:last-child) {

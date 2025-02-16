@@ -53,4 +53,27 @@
         width: 100%;
         image-rendering: pixelated;
     }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 728px) {
+        .about-inventory {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .inventory-item {
+            display: flex;
+            align-items: center;
+            padding: var(--padding-s) 0;
+        }
+        .inventory-item:not(:last-child) {
+            border-bottom: var(--border-width) solid var(--color-border);
+        }
+        .inventory-item img {
+            height: auto;
+            max-height: 100%;
+            width: 3rem;
+        }
+    }
 </style>

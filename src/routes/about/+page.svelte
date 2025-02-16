@@ -142,8 +142,10 @@
 <style>
   /* About info */
   .about {
+    height: 29.2rem;
     display: flex;
     border: var(--border-width) solid var(--color-border);
+    overflow: hidden;
   }
 
   .about-character {
@@ -182,10 +184,13 @@
 
   /* Showed Property */
   .about-showed-property {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: var(--padding-m);
     padding: var(--padding-x);
+    overflow-y: scroll;
   }
   .about-showed-property h2 {
     text-transform: capitalize;
