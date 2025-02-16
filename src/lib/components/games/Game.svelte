@@ -1,6 +1,6 @@
 <script lang="ts">
   export let name: string;
-  export let img: string;
+  export let img: any; // Picture type is not exported in Svelte Enhanced Images
   export let tier: "s" | "a" | "b";
   export let darkMode = false;
 </script>

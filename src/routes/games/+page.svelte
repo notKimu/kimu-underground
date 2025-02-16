@@ -10,6 +10,7 @@
   import PokemonBlackImg from "$lib/assets/images/games/pokemon_black.jpg?enhanced";
   import Portal2Img from "$lib/assets/images/games/portal2.webp?enhanced";
   import RDR2Img from "$lib/assets/images/games/rdr2.webp?enhanced";
+  import DiabloImg from "$lib/assets/images/games/diablo.webp?enhanced";
   import MetaphorImg from "$lib/assets/images/games/metaphor.webp?enhanced";
   import MinecraftImg from "$lib/assets/images/games/minecraft.webp?enhanced";
   import Persona5RoyalImg from "$lib/assets/images/games/persona_5_royal.webp?enhanced";
@@ -37,6 +38,7 @@
 	<Game name={"Pokemon Black"} img={PokemonBlackImg} tier={"s"} />
 	<Game name={"Portal 2"} img={Portal2Img} tier={"s"} />
 	<Game name={"RDR 2"} img={RDR2Img} tier={"s"} />
+	<Game name={"Diablo"} img={DiabloImg} tier={"s"} />
 	<Game name={"Metaphor: ReFantazio"} img={MetaphorImg} tier={"s"} />
 	<Game name={"Minecraft"} img={MinecraftImg} tier={"s"} />
 	<Game name={"Persona 5 Royal"} img={Persona5RoyalImg} tier={"a"} />
