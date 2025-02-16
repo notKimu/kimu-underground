@@ -19,11 +19,11 @@
 <Separator />
 
 <div class="project-list">
-  <Project name={"Rubiu5"} description={"The discord bot for Rubius Army"} img={Rubiu5Img} />
-  <Project name={"Archan"} description={"A complete discord bot featuring a control panel"} img={ArchanImg} />
-  <Project name={"StarMC"} description={"Minecraft launcher built on Tauri"} img={StarMCImg} />
-  <Project name={"DnD Abenyu"} description={"A DnD helper server built in Rust"} img={DnDAbenyuImg} />
-  <Project name={"Ryoko"} description={"Social Minecraft plugin similar to Essentials X"} img={RyokoImg} />
+  <Project name={"Rubiu5"} description={"The discord bot for Rubius Army"} img={Rubiu5Img} tags={["TypeScript", "Docker", "MongoDB"]} />
+  <Project name={"Archan"} description={"A fast and configurable discord bot"} img={ArchanImg} tags={["TypeScript", "Docker", "Redis"]} />
+  <Project name={"StarMC"} description={"Minecraft launcher built on Tauri"} img={StarMCImg} tags={["Rust", "React"]} />
+  <Project name={"DnD Abenyu"} description={"A DnD helper server built in Rust"} img={DnDAbenyuImg} tags={["Rust", "Svelte", "SQLite"]} />
+  <Project name={"Ryoko"} description={"Social Minecraft plugin similar to Essentials X"} img={RyokoImg} tags={["Java", "Kotlin"]} />
 </div>
 
 <style>
