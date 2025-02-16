@@ -57,7 +57,7 @@
         display: flex;
         align-items: center;
         gap: var(--padding-m);
-        padding: var(--padding-m);
+        padding: var(--padding-s) var(--padding-m);
     }
     .app-entry:not(:last-child) {
         border-bottom: var(--border-width) solid var(--color-border);

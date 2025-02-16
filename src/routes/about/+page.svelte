@@ -6,9 +6,10 @@
   import Tools from "$lib/components/about/Tools.svelte";
   import Apps from "$lib/components/about/Apps.svelte";
   import Inventory from "$lib/components/about/Inventory.svelte";
+  import Workspace from "$lib/components/about/Workspace.svelte";
   import { onMount } from "svelte";
 
-  let selectedProperty: "presentation" | "tools" | "apps" | "inventory" | "" =
+  let selectedProperty: "presentation" | "tools" | "apps" | "inventory" | "workspace" | "" =
     "presentation";
 
   onMount(() => {
@@ -111,6 +112,18 @@
           />
         </svg>
       </button>
+
+      <button
+      class={`${selectedProperty === "workspace" ? "property-selector-active" : ""} about-character-property`}
+      on:click={() => (selectedProperty = "workspace")}
+    >
+      <svg class="property-selector" version="1.1" id="XMLID_167_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+      viewBox="0 0 24 24" xml:space="preserve">
+        <g>
+          <path d="M24,23H0v-7h2V1h20v15h2V23z M2,21h20v-3H2V21L2,21z M4,16h16V3H4V16z M18,14H6V5h12V14z M8,12h8V7H8V12z"/>
+        </g>
+      </svg>
+    </button>
     </div>
   </div>
 
@@ -124,7 +137,10 @@
       <Apps />
     {:else if selectedProperty === "inventory"}
       <Inventory />
+    {:else if selectedProperty === "workspace"}
+      <Workspace />
     {/if}
+    
   </div>
 </div>
 
