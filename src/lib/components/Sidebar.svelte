@@ -101,10 +101,13 @@
         gap: var(--padding-s);
     }
 
+    .sidebar-link:hover p {
+        color: var(--color-accent);
+    }
+
     .sidebar-link-icon {
         fill: var(--color-fg);
         height: 1em;
-        /* width: 0%; */
     }
     .sidebar-link:hover .sidebar-link-icon {
         fill: var(--color-accent);

@@ -2,15 +2,16 @@
     import { _ } from "svelte-i18n";
     import Separator from "../Separator.svelte";
     // Images
-    import StandImg from "$lib/assets/images/bocchi_stand_badass.webp?enhanced";
+    import CharacterImg from "$lib/assets/images/lain_walk.webp";
 </script>
 
 <div class="about-character-view">
-    <enhanced:img
-        class="about-character-image"
-        src={StandImg}
-        alt="Character"
-    />
+    <div class="about-character-img">
+        <img
+            src={CharacterImg}
+            alt="Character walking"
+        />
+    </div>
 
     <Separator margin={false} />
 
@@ -61,8 +62,13 @@
         text-align: right;
     }
 
-    .about-character-image {
+    .about-character-img {
+        height: 17.6rem;
+        display: flex;
+        justify-content: center;
+    }
+    .about-character-img img {
         height: 100%;
-        width: 100%;
+        width: auto;
     }
 </style>
