@@ -1,7 +1,9 @@
 <script lang="ts">
-    export let maxSlots: number;
-    export let usedSlots: number;
-    export let level: number;
+    const {
+        maxSlots,
+        usedSlots,
+        level,
+    }: { maxSlots: number; usedSlots: number; level: number } = $props();
 </script>
 
 <div class="spell-container">

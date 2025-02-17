@@ -1,5 +1,6 @@
 <script lang="ts">
-    export let text: string = "";
+    const { text = "" } = $props();
+
     let delaySum = 0;
     const addDelay = () => {
         delaySum += 0.6;

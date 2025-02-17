@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let margin = true;
+    const { margin = true } = $props();
 </script>
 
 <div class="separator">

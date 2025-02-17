@@ -1,8 +1,10 @@
 <script lang="ts">
-    export let title: string;
-    export let icon: string;
-    export let path: string;
-    export let num: number;
+    const {
+        title,
+        icon,
+        path,
+        num,
+    }: { title: string; icon: string; path: string; num: number } = $props();
 </script>
 
 <a class="story-container no-deco" href={path}>

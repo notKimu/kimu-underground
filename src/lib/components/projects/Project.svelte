@@ -1,8 +1,11 @@
 <script lang="ts">
-    export let name: string;
-    export let description: string;
-    export let img: any; // Picture tyoe is not exported by Svelte Enhanced Images
-    export let tags: string[];
+    const {
+        name,
+        description,
+        img,
+        tags,
+    }: { name: string; description: string; img: any; tags: string[] } =
+        $props();
 </script>
 
 <div class="project-container">

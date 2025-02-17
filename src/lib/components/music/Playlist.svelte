@@ -1,9 +1,8 @@
 <script lang="ts">
     import type { PlaylistData } from "$lib/types/spotify.dto";
 
-    export let playlistData: PlaylistData;
-    export let name: string;
-    console.log(playlistData.images[0].url);
+    const { playlistData, name }: { playlistData: PlaylistData; name: string } =
+        $props();
 </script>
 
 <a href={`/music/playlist/${name}`} class="playlist-container">

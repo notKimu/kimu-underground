@@ -28,8 +28,8 @@
         <h1 class="error-message-text">Error</h1>
     </div>
     <div class="error-info">
-        <h1>{$page.status}</h1>
-        <h3>{$page.error?.message}</h3>
+        <h1>{page.status}</h1>
+        <h3>{page.error?.message}</h3>
     </div>
 </div>
 

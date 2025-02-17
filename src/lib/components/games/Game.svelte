@@ -1,8 +1,15 @@
 <script lang="ts">
-    export let name: string;
-    export let img: any; // Picture type is not exported in Svelte Enhanced Images
-    export let tier: "s" | "a" | "b";
-    export let darkMode = false;
+    const {
+        name,
+        img,
+        tier,
+        darkMode = true,
+    }: {
+        name: string;
+        img: any;
+        tier: "s" | "a" | "b";
+        darkMode: boolean;
+    } = $props();
 </script>
 
 <div class="game" style={`border-left: .5rem solid var(--tier-${tier});`}>

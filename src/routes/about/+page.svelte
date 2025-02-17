@@ -15,7 +15,7 @@
         | "apps"
         | "inventory"
         | "workspace"
-        | "" = "presentation";
+        | "" = $state("presentation");
 
     onMount(() => {
         if (window.innerWidth < 728) {
@@ -41,8 +41,9 @@
 
         <div class="about-character-selector">
             <button
+                aria-label="character status"
                 class={`${selectedProperty === "" ? "property-selector-active" : ""} about-character-property mobile-only`}
-                on:click={() => (selectedProperty = "")}
+                onclick={() => (selectedProperty = "")}
             >
                 <svg
                     class="property-selector"
@@ -55,8 +56,9 @@
                 </svg>
             </button>
             <button
+                aria-label="presentation"
                 class={`${selectedProperty === "presentation" ? "property-selector-active" : ""} about-character-property`}
-                on:click={() => (selectedProperty = "presentation")}
+                onclick={() => (selectedProperty = "presentation")}
             >
                 <svg
                     class="property-selector"
@@ -71,8 +73,9 @@
             </button>
 
             <button
+                aria-label="tools"
                 class={`${selectedProperty === "tools" ? "property-selector-active" : ""} about-character-property`}
-                on:click={() => (selectedProperty = "tools")}
+                onclick={() => (selectedProperty = "tools")}
             >
                 <svg
                     class="property-selector"
@@ -87,8 +90,9 @@
             </button>
 
             <button
+                aria-label="applications"
                 class={`${selectedProperty === "apps" ? "property-selector-active" : ""} about-character-property`}
-                on:click={() => (selectedProperty = "apps")}
+                onclick={() => (selectedProperty = "apps")}
             >
                 <svg
                     class="property-selector"
@@ -103,8 +107,9 @@
             </button>
 
             <button
+                aria-label="inventory"
                 class={`${selectedProperty === "inventory" ? "property-selector-active" : ""} about-character-property`}
-                on:click={() => (selectedProperty = "inventory")}
+                onclick={() => (selectedProperty = "inventory")}
             >
                 <svg
                     class="property-selector"
@@ -119,8 +124,9 @@
             </button>
 
             <button
+                aria-label="workspace"
                 class={`${selectedProperty === "workspace" ? "property-selector-active" : ""} about-character-property`}
-                on:click={() => (selectedProperty = "workspace")}
+                onclick={() => (selectedProperty = "workspace")}
             >
                 <svg
                     class="property-selector"

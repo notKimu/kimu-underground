@@ -1,6 +1,6 @@
 <script lang="ts">
     import { _ } from "svelte-i18n";
-    let isOpen = false;
+    let isOpen = $state(false);
 </script>
 
 <div class={`sidebar-container ${isOpen ? "article-open" : ""}`} id="sidebar">
@@ -61,8 +61,9 @@
     </article>
 
     <button
+        aria-label="menu switch"
         class={`switch ${isOpen ? "switch-open" : ""}`}
-        on:click={() => (isOpen = !isOpen)}
+        onclick={() => (isOpen = !isOpen)}
     >
         <svg
             class="switch-icon"

@@ -1,7 +1,6 @@
 <script lang="ts">
-    export let name: string;
-    export let icon: string;
-    export let link: string;
+    const { name, icon, link }: { name: string; icon: string; link: string } =
+        $props();
 </script>
 
 <a href={link} class="container" target="_blank">

@@ -3,7 +3,7 @@
     import Separator from "$lib/components/Separator.svelte";
     import Playlist from "$lib/components/music/Playlist.svelte";
 
-    export let data;
+    let { data } = $props();
 </script>
 
 <svelte:head>

@@ -1,7 +1,8 @@
 <script lang="ts">
     import Separator from "$lib/components/Separator.svelte";
 
-    export let data;
+    const { data } = $props();
+    const StoryContent = data.content;
 </script>
 
 <article>
@@ -22,7 +23,7 @@
     {/if}
 
     <div class="content">
-        <svelte:component this={data.content} />
+        <StoryContent />
     </div>
 </article>
 

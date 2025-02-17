@@ -6,6 +6,8 @@
     import Sidebar from "$lib/components/Sidebar.svelte";
     // Images
     import GuraSpinImg from "$lib/assets/images/gawr-spin.gif";
+
+    let { children } = $props();
 </script>
 
 <div id="app">
@@ -20,7 +22,7 @@
         <Header />
         <Sidebar />
         <main>
-            <slot />
+            {@render children()}
         </main>
     {/if}
 </div>

@@ -1,8 +1,5 @@
 <script lang="ts">
-    export let cover = "";
-    export let title = "";
-    export let artist = "";
-    export let link = "";
+    const { cover = "", title = "", artist = "", link = "" } = $props();
 </script>
 
 <a href={link} target="_blank" class="track-container">

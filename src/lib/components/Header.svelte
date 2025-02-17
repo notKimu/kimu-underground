@@ -1,11 +1,11 @@
 <script lang="ts">
     import { get } from "svelte/store";
     import { locale } from "svelte-i18n";
+    import { onMount } from "svelte";
     // Images
     import KimuFaceImg from "$lib/assets/images/kimucara.webp";
-    import { onMount } from "svelte";
 
-    let userLocale = getLocale();
+    let userLocale = $state(getLocale());
 
     onMount(() => {
         const savedLocale = localStorage.getItem("locale");
@@ -17,10 +17,7 @@
 
     function getLocale(): string {
         const userLocale = get(locale)?.substring(0, 2);
-        console.log("Userlocale from lib: " + userLocale);
-
         if (!(userLocale || userLocale === "en" || userLocale === "es")) {
-            console.log(userLocale);
             locale.set("en");
             return "en";
         }
@@ -119,8 +116,9 @@
 
         <select
             name="lang"
+            class="lang-selector"
             bind:value={userLocale}
-            on:change={() => updateLocale()}
+            onchange={() => updateLocale()}
         >
             <option value="en">en</option>
             <option value="es">es</option>
@@ -167,6 +165,11 @@
     }
     .social a:hover .social-link-color {
         fill: var(--color-accent);
+    }
+
+    .lang-selector {
+        color: var(--color-border);
+        font-weight: bold;
     }
 
     .spacer {
