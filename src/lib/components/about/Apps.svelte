@@ -1,30 +1,31 @@
 <script lang="ts">
-	import VSCodiumImg from "$lib/assets/images/applications/vscodium.webp?enhanced";
-	import NeovimImg from "$lib/assets/images/applications/neovim.webp?enhanced";
-	import WinampImg from "$lib/assets/images/applications/winamp.webp?enhanced";
-	import ObsidianImg from "$lib/assets/images/applications/obsidian.webp?enhanced";
-	import KritaImg from "$lib/assets/images/applications/krita.webp?enhanced";
-	import LibreWolfImg from "$lib/assets/images/applications/librewolf.webp?enhanced";
+    import VSCodiumImg from "$lib/assets/images/applications/vscodium.webp?enhanced";
+    import NeovimImg from "$lib/assets/images/applications/neovim.webp?enhanced";
+    import WinampImg from "$lib/assets/images/applications/winamp.webp?enhanced";
+    import ObsidianImg from "$lib/assets/images/applications/obsidian.webp?enhanced";
+    import KritaImg from "$lib/assets/images/applications/krita.webp?enhanced";
+    import LibreWolfImg from "$lib/assets/images/applications/librewolf.webp?enhanced";
 </script>
 
 <div>
     <div class="app-entry">
         <div class="app-image">
             <enhanced:img src={VSCodiumImg} alt="" loading="lazy">
+            </enhanced:img>
         </div>
         <p>VSCodium</p>
     </div>
 
     <div class="app-entry">
         <div class="app-image">
-            <enhanced:img src={NeovimImg} alt="" loading="lazy">
+            <enhanced:img src={NeovimImg} alt="" loading="lazy"> </enhanced:img>
         </div>
         <p>Neovim</p>
     </div>
-    
+
     <div class="app-entry">
         <div class="app-image">
-            <enhanced:img src={WinampImg} alt="" loading="lazy">
+            <enhanced:img src={WinampImg} alt="" loading="lazy"> </enhanced:img>
         </div>
         <p>Winamp</p>
     </div>
@@ -32,13 +33,14 @@
     <div class="app-entry">
         <div class="app-image">
             <enhanced:img src={ObsidianImg} alt="" loading="lazy">
+            </enhanced:img>
         </div>
         <p>Obsidian</p>
     </div>
 
     <div class="app-entry">
         <div class="app-image">
-            <enhanced:img src={KritaImg} alt="" loading="lazy">
+            <enhanced:img src={KritaImg} alt="" loading="lazy"> </enhanced:img>
         </div>
         <p>Krita</p>
     </div>
@@ -46,6 +48,7 @@
     <div class="app-entry">
         <div class="app-image">
             <enhanced:img src={LibreWolfImg} alt="" loading="lazy">
+            </enhanced:img>
         </div>
         <p>LibreWolf</p>
     </div>
@@ -71,7 +74,7 @@
         height: fit-content;
         padding: var(--padding-s);
     }
-    .app-image img{
+    .app-image img {
         height: auto;
         width: 100%;
     }

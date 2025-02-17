@@ -1,1 +1,12 @@
-{"images":[{"url":"https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da840c1b7891fe2bfccf1ab5933f"}],"external_urls":{"spotify":"https://open.spotify.com/playlist/6EvqmFpfnC5L1ChxBBTmhj"},"name":"Kimu","description":"Kimu&#x27;s upbeat playlist"}
+{
+    "images": [
+        {
+            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da840c1b7891fe2bfccf1ab5933f"
+        }
+    ],
+    "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6EvqmFpfnC5L1ChxBBTmhj"
+    },
+    "name": "Kimu",
+    "description": "Kimu&#x27;s upbeat playlist"
+}

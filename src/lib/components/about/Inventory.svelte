@@ -8,28 +8,28 @@
 <div class="about-inventory">
     <div class="inventory-item">
         <div>
-            <enhanced:img src={CameraImg} alt="" loading="lazy">
+            <enhanced:img src={CameraImg} alt="" loading="lazy"> </enhanced:img>
         </div>
         <p>Nikon L19</p>
     </div>
 
     <div class="inventory-item">
         <div>
-            <enhanced:img src={PhoneImg} alt="" loading="lazy">
+            <enhanced:img src={PhoneImg} alt="" loading="lazy"> </enhanced:img>
         </div>
         <p>Mi Mix 2s</p>
     </div>
 
     <div class="inventory-item">
         <div>
-            <enhanced:img src={IpodImg} alt="" loading="lazy">
+            <enhanced:img src={IpodImg} alt="" loading="lazy"> </enhanced:img>
         </div>
         <p>iPod Mini</p>
     </div>
 
     <div class="inventory-item">
         <div>
-            <enhanced:img src={DapImg} alt="" loading="lazy">
+            <enhanced:img src={DapImg} alt="" loading="lazy"> </enhanced:img>
         </div>
         <p>Fiio M3K</p>
     </div>

@@ -1,12 +1,15 @@
 <script lang="ts">
-  import {_} from "svelte-i18n";
-  import WorkstationImg from "$lib/assets/images/workspace/workstation.webp?enhanced";
-  import Separator from "../Separator.svelte";
+    import { _ } from "svelte-i18n";
+    import WorkstationImg from "$lib/assets/images/workspace/workstation.webp?enhanced";
+    import Separator from "../Separator.svelte";
 </script>
 
 <div class="about-workspace">
     <div class="workspace-laptop">
-        <enhanced:img src={WorkstationImg} alt="A laptop with a Linux worspace" />
+        <enhanced:img
+            src={WorkstationImg}
+            alt="A laptop with a Linux worspace"
+        />
     </div>
 
     <Separator margin={false} />

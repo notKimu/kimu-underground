@@ -23,13 +23,15 @@ Experiment with tighter tracking (letter-spacing) for a more comfortable read in
 # CHANGELOG
 
 v1.350
+
 - 775 glyphs
 - Added fractions: ↉ ⅓ ⅔ ⅕ ⅖ ⅗ ⅘ ⅙ ⅚ ⅐ ⅑
-- Added a centered alternate for *
+- Added a centered alternate for \*
 - Adjusted old-style numerals 0, 1, 2 to be x-height
 - Adjusted ½ ¼ ¾ ⅛ ⅜ ⅝ ⅞ ‰ to fit in bounding box
 - Adjusted curly brackets to horizontally align with other brackets
-- Adjusted position of * and °
+- Adjusted position of \* and °
 
 v1.346
+
 - 763 glyphs

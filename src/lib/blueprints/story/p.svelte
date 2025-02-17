@@ -1,3 +1,3 @@
 <p class="story-p">
-  <slot />
+    <slot />
 </p>
