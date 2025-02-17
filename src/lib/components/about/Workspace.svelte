@@ -1,5 +1,6 @@
 <script lang="ts">
-    import WorkstationImg from "$lib/assets/images/workspace/workstation.webp?enhanced";
+  import {_} from "svelte-i18n";
+  import WorkstationImg from "$lib/assets/images/workspace/workstation.webp?enhanced";
   import Separator from "../Separator.svelte";
 </script>
 
@@ -11,8 +12,23 @@
     <Separator margin={false} />
 
     <div class="worspace-info">
-        <span class="workspace-info__line"><h3>System:</h3><p>Artix Linux</p></span>
-        <span class="workspace-info__line"><h3>Desktop:</h3><p>KDE</p></span>
+        <div class="workspace-info__entry">
+            <h3>{@html $_("page.about.workspace.system")}</h3>
+            <h3>:</h3>
+            <p>Artix Linux</p>
+        </div>
+
+        <div class="workspace-info__entry">
+            <h3>{@html $_("page.about.workspace.desktop")}</h3>
+            <h3>:</h3>
+            <p>KDE Plasma</p>
+        </div>
+
+        <div class="workspace-info__entry">
+            <h3>{@html $_("page.about.workspace.init")}</h3>
+            <h3>:</h3>
+            <p>OpenRC</p>
+        </div>
     </div>
 </div>
 
@@ -35,9 +51,22 @@
         width: 100%;
     }
 
-    .workspace-info__line {
-        display: flex;
-        align-items: center;
+    .workspace-info__entry {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
         gap: var(--padding-m);
+        align-items: center;
+    }
+    .workspace-info__entry h3:nth-child(1) {
+        text-align: right;
+    }
+    .workspace-info__entry p {
+        text-align: left;
+    }
+
+    @media screen and (max-width: 728px) {
+        .workspace-laptop {
+            width: 90%;
+        }
     }
 </style>
