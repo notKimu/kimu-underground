@@ -1,10 +1,39 @@
 <script lang="ts">
+  import { get } from "svelte/store";
   import { locale } from "svelte-i18n";
   // Images
   import KimuFaceImg from "$lib/assets/images/kimucara.webp";
+  import { onMount } from "svelte";
+
+  let userLocale = getLocale();
+
+
+  onMount(() => {
+    const savedLocale = localStorage.getItem("locale");
+    if (savedLocale) {
+      locale.set(savedLocale);
+      userLocale = savedLocale;
+    };
+  });
+
+  function getLocale(): string {
+    const userLocale = get(locale)?.substring(0,2);
+    console.log("Userlocale from lib: " + userLocale);
+
+    if (!(userLocale || userLocale === "en" || userLocale === "es")) {
+      console.log(userLocale);
+      locale.set("en");
+      return "en";
+    }
+
+    return userLocale;
+  }
 
   function updateLocale() {
-    localStorage.setItem("locale", $locale ?? "en");
+    const strippedLocale = userLocale.substring(0, 2);
+
+    localStorage.setItem("locale", strippedLocale);
+    locale.set(strippedLocale);
   }
 </script>
 
@@ -15,7 +44,7 @@
   </a>
 
   <div class="social">
-    <a href="https://github.com/notkimu">
+    <a aria-label="github" href="https://github.com/notkimu">
       <svg
         class="social-link"
         viewBox="0 0 20 20"
@@ -36,7 +65,7 @@
       >
     </a>
 
-    <a href="https://twitter.com/notkimu">
+    <a aria-label="twitter" href="https://twitter.com/notkimu">
       <svg
         class="social-link"
         viewBox="0 -2 20 20"
@@ -57,7 +86,7 @@
       >
     </a>
 
-    <a href="https://discord.gg/NfeXrQdXdE">
+    <a aria-label="discord server" href="https://discord.gg/NfeXrQdXdE">
       <svg
         class="social-link social-link-color"
         viewBox="0 0 32 32"
@@ -69,7 +98,7 @@
       >
     </a>
 
-    <a href="https://ko-fi.com/notkimu">
+    <a aria-label="ko-fi" href="https://ko-fi.com/notkimu">
       <svg
         class="social-link social-link-color"
         viewBox="0 0 32 32"
@@ -81,9 +110,9 @@
       </svg>
     </a>
 
-    <select name="lang" bind:value={$locale} on:change={() => updateLocale()}>
+    <select name="lang" bind:value={userLocale} on:change={() => updateLocale()}>
+      <option value="en">en</option>
       <option value="es">es</option>
-      <option value="en-US">en</option>
     </select>
   </div>
 </header>

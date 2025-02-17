@@ -1,17 +1,11 @@
 <script lang="ts">
   import "$lib/i18n";
   import "../app.css";
-  import { onMount } from "svelte";
-  import { isLoading, locale } from "svelte-i18n";
+  import { isLoading } from "svelte-i18n";
   import Header from "$lib/components/Header.svelte";
   import Sidebar from "$lib/components/Sidebar.svelte";
   // Images
   import GuraSpinImg from "$lib/assets/images/gawr-spin.gif";
-
-  onMount(() => {
-    const savedLocale = localStorage.getItem("locale");
-    if (savedLocale) locale.set(savedLocale);
-  });
 </script>
 
 <div id="app">
