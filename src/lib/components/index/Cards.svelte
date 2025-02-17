@@ -12,6 +12,7 @@
 <style>
   .container {
     display: flex;
+    align-items: center;
     gap: var(--padding-m);
     border: var(--color-fg) solid var(--border-width);
     padding: var(--padding-m);
