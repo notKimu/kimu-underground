@@ -12,6 +12,13 @@
         },
         "about": {
             "title": "About me",
+            "stats": {
+                "nick": "Nick",
+                "level": "Level",
+                "hp": "HP",
+                "mana": "Mana",
+                "rank": "Rank"
+            },
             "presentation": "Heya! I am Kimu, an spanish 19 year old female software engineer that loves playing around with tech stuff.<br><br>Messing around with everything has always been my thing, tearing down the family laptop, changing the leds in my controller, or soldering a new jack to my mp3.<br><br>I'm kind of an introvert, but I do like talking to people, from time to time.",
             "workspace": {
                 "system": "System",

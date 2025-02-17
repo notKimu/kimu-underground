@@ -1,4 +1,5 @@
 <script>
+  import {_} from "svelte-i18n";
   import Separator from "../Separator.svelte";
   // Images
   import StandImg from "$lib/assets/images/bocchi_stand_badass.webp?enhanced";
@@ -11,27 +12,27 @@
 
   <div class="about-character-info">
     <span class="info-separator"
-      ><b>Name</b>
+      ><b>{@html $_("page.about.stats.nick")}</b>
       <p>:</p>
       <p>キム</p></span
     >
     <span class="info-separator"
-      ><b>Level</b>
+      ><b>{@html $_("page.about.stats.level")}</b>
       <p>:</p>
       <p>19</p></span
     >
     <span class="info-separator"
-      ><b>HP</b>
+      ><b>{@html $_("page.about.stats.hp")}</b>
       <p>:</p>
       <p>???</p></span
     >
     <span class="info-separator"
-      ><b>Mana</b>
+      ><b>{@html $_("page.about.stats.mana")}</b>
       <p>:</p>
       <p>???</p></span
     >
     <span class="info-separator"
-      ><b>Rank</b>
+      ><b>{@html $_("page.about.stats.rank")}</b>
       <p>:</p>
       <p>01</p></span
     >

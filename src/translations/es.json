@@ -12,6 +12,13 @@
         },
         "about": {
             "title": "Sobre mi",
+            "stats": {
+                "nick": "PseudoN",
+                "level": "Nivel",
+                "hp": "HP",
+                "mana": "Maná",
+                "rank": "Rango"
+            },
             "presentation": "¡Owa! Soy Kimu, una ingeniera de software de 19 años a la que le gusta cacharrear con tecnología.<br><br>Trastear con absolutamente todo siempre ha sido lo mio, abrir el portátil familiar, cambiar los leds de mi mando, o soldar otro jack a mi mp3.<br><br>Soy muy introvertida, pero me gusta hablar con gente de vez en cuando.",
             "workspace": {
                 "system": "Sistema",
