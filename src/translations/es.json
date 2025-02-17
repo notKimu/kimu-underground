@@ -8,7 +8,16 @@
             "proyects": "Proyectos"
         },
         "home": {
-            "body": "¡Welcum a mi página personal de desarrolladora!<br><br>Aquí me gustaría guardar cosas sobre mi, como la música que me gusta, mis proyectos personales, mi historia y mucho más.<br><br>Busco que este sea un sitio seguro para poder expresarme y compartir cosas que me gustan, pero también para ayudar a otros y quizás que encuentren algo que les guste, echa un vistazo por si algo te llama la atención.<br><br>Si quieres hablar conmigo o decirme algo puedes escribirme por Twitter."
+            "greeting": "¡Bienvenidx a mi casita! =w=",
+            "body": "¡Welcum a mi página personal de desarrolladora!<br><br>Aquí me gustaría guardar cosas sobre mi, como la música que me gusta, mis proyectos personales, mi historia y mucho más.<br><br>Busco que este sea un sitio seguro para poder expresarme y compartir cosas que me gustan, pero también para ayudar a otros y quizás que encuentren algo que les guste, echa un vistazo por si algo te llama la atención.<br><br>Si quieres hablar conmigo o decirme algo puedes escribirme por Twitter.",
+            "links": {
+                "wishlist": "Wishlist",
+                "game-tracker": "Tracker de juegos",
+                "read-list": "Lista de lectura",
+                "donate": "Donar :3",
+                "my-server": "Mi servidor",
+                "youtube": "Youtube"
+            }
         },
         "about": {
             "title": "Sobre mi",
