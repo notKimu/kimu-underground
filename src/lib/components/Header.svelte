@@ -3,6 +3,7 @@
     import { locale } from "svelte-i18n";
     import { onMount } from "svelte";
     // Images
+    import CoplandOsImg from "$lib/assets/images/copland.webp";
     import KimuFaceImg from "$lib/assets/images/kimucara.webp";
 
     let userLocale = $state(getLocale());
@@ -40,6 +41,8 @@
     </a>
 
     <div class="social">
+        <img class="social-copland" src={CoplandOsImg} alt="">
+
         <a aria-label="github" href="https://github.com/notkimu">
             <svg
                 class="social-link"
@@ -153,6 +156,10 @@
     .titlebar,
     .titlebar-image {
         height: 100%;
+    }
+
+    .social-copland {
+        height: 2rem;
     }
 
     .social-link {

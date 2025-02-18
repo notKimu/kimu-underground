@@ -8,6 +8,8 @@
         <div class="sidebar-title">
             <h3>Filesystem</h3>
         </div>
+        
+        <div class="sidebar-title__separator"></div>
 
         <a class="sidebar-link" href="/about">
             <svg
@@ -77,6 +79,12 @@
 </div>
 
 <style>
+    :root {
+        --text-padding-h: .3rem;
+        --text-padding-v: .4rem;
+        --height-button: 3.5rem;
+    }
+
     .sidebar-container {
         position: fixed;
         top: calc(var(--padding-x) + var(--header-height));
@@ -91,18 +99,47 @@
         pointer-events: all;
     }
 
+    article {
+        width: var(--sidebar-width);
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-bg);
+        border: var(--border-width) solid var(--color-border);
+        padding: var(--padding-s);
+    }
+    .article-open {
+        left: var(--padding-m) !important;
+    }
+
     .sidebar-title {
-        padding-bottom: var(--padding-s);
+        height: calc(var(--height-button) - (var(--padding-s) * 2) - (var(--border-width) * 2));
+        display: flex;
+        align-items: center;
+        padding: var(--text-padding-v) var(--text-padding-h);
+    }
+
+    .sidebar-title__separator {
+        height: var(--border-width);
+        width: 100%;
+        margin: var(--padding-s) 0;
+        background-color: var(--color-border);
     }
 
     .sidebar-link {
         display: flex;
         align-items: center;
         gap: var(--padding-s);
+        padding: var(--text-padding-h) var(--padding-s);
+        text-decoration: none;
     }
 
-    .sidebar-link:hover p {
-        color: var(--color-accent);
+    .sidebar-link:hover {
+        background-color: var(--color-accent);
+    }
+
+    .sidebar-link:hover p, .sidebar-link:hover svg * {
+        color: var(--color-bg);
+        fill: var(--color-bg);
     }
 
     .sidebar-link-icon {
@@ -113,21 +150,9 @@
         fill: var(--color-accent);
     }
 
-    article {
-        width: var(--sidebar-width);
-        display: flex;
-        flex-direction: column;
-        gap: var(--padding-s);
-        background-color: var(--color-bg);
-        border: var(--border-width) solid var(--color-border);
-        padding: var(--padding-m);
-    }
-    .article-open {
-        left: var(--padding-m) !important;
-    }
-
+    /* MENU SWITCH */
     .switch {
-        height: 3.5rem;
+        height: var(--height-button);
         border: var(--border-width) solid var(--color-border);
         border-left: 0;
         background: var(--color-bg);
