@@ -30,7 +30,7 @@
         height: 7rem;
         display: flex;
         gap: var(--padding-s);
-        background-color: var(--color-fg);
+        background-color: var(--color-border);
         padding: var(--padding-s);
         overflow: hidden;
     }
@@ -47,7 +47,7 @@
         z-index: 10;
     }
     .playlist-data * {
-        color: var(--color-bg);
+        color: var(--color-fg);
     }
 
     /** HOVER EFFECT */

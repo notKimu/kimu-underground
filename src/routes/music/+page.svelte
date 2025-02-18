@@ -2,6 +2,7 @@
     import { _ } from "svelte-i18n";
     import Separator from "$lib/components/Separator.svelte";
     import Playlist from "$lib/components/music/Playlist.svelte";
+    import "$lib/assets/css/music.css";
 
     let { data } = $props();
 </script>
@@ -14,7 +15,12 @@
 
 <Separator />
 
-<h3>Playlists: 3</h3>
+<div class="playlist-info">
+    <h3>Playlists: 3</h3>
+    <a href="https://open.spotify.com/user/7ffa70unfgny74s5yj5f6um59">
+        <h3>Profile</h3>
+    </a>
+</div>
 
 <div class="window-container">
     <div class="window-titlebar">
@@ -28,8 +34,8 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
             >
                 <g
-                    stroke="var(--color-bg)"
-                    stroke-width="1"
+                    stroke="var(--color-fg)"
+                    stroke-width="2"
                     fill="none"
                     fill-rule="evenodd"
                 >
@@ -50,8 +56,8 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
             >
                 <g
-                    stroke="var(--color-bg)"
-                    stroke-width="1"
+                    stroke="var(--color-fg)"
+                    stroke-width="2"
                     fill="none"
                     fill-rule="evenodd"
                 >
@@ -74,8 +80,8 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
             >
                 <g
-                    stroke="var(--color-bg)"
-                    stroke-width="1"
+                    stroke="var(--color-fg)"
+                    stroke-width="2"
                     fill="none"
                     fill-rule="evenodd"
                 >
@@ -104,43 +110,6 @@
 </div>
 
 <style>
-    .window-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .window-titlebar {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background-color: var(--color-fg);
-        padding: 0 var(--padding-s);
-    }
-    .window-titlebar * {
-        color: var(--color-bg);
-    }
-
-    .window-titlebar-icon-container {
-        display: flex;
-        align-items: center;
-        gap: var(--padding-s);
-    }
-
-    .window-titlebar-icon {
-        height: 0.6em;
-    }
-    .window-titlebar-icon * {
-        fill: var(--color-bg);
-    }
-
-    .window-content {
-        border: var(--border-width) solid var(--color-fg);
-        border-top: none;
-        padding: var(--padding-m);
-    }
-
     .playlist-container {
         display: flex;
         flex-direction: column;

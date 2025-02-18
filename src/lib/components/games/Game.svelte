@@ -8,7 +8,7 @@
         name: string;
         img: any;
         tier: "s" | "a" | "b";
-        darkMode: boolean;
+        darkMode?: boolean;
     } = $props();
 </script>
 

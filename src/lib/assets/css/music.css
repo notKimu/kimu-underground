@@ -1,0 +1,43 @@
+.window-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.window-titlebar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-border);
+    padding: 0 var(--padding-s);
+}
+.window-titlebar * {
+    color: var(--color-fg);
+}
+
+.window-titlebar-icon-container {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-s);
+}
+
+.window-titlebar-icon {
+    height: 0.6em;
+}
+.window-titlebar-icon * {
+    fill: var(--color-fg);
+}
+
+.window-content {
+    border: var(--border-width) solid var(--color-border);
+    border-top: none;
+    padding: var(--padding-m);
+}
+
+.playlist-info {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--padding-m);
+    margin-bottom: var(--padding-s);
+}
