@@ -3,7 +3,7 @@
         name,
         img,
         tier,
-        darkMode = true,
+        darkMode = false,
     }: {
         name: string;
         img: any;
