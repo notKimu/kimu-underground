@@ -6,6 +6,14 @@
     import Cards from "$lib/components/index/Cards.svelte";
     // Images
     import KimuGithubImg from "$lib/assets/images/kimu-github.webp?enhanced";
+
+    const messages: string[] = $_("page.home.greeting") as unknown as string[];
+    let currentMessage = $state(0);
+
+    function randomMessage() {
+        currentMessage = Math.floor(Math.random() * messages.length);
+        if (currentMessage === 0) randomMessage();
+    }
 </script>
 
 <svelte:head>
@@ -28,18 +36,42 @@
                 loading="lazy"
             />
 
-            <div class="character-dialog">
-                <!-- Connector for the speech balloon -->
-                <svg
-                    class="character-dialog-connector"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                    ><path d="M20.697 24L9.303 16.003 20.697 8z" /></svg
-                >
+            {#key messages[currentMessage]}
+                <!-- svelte-ignore a11y_click_events_have_key_events -->
+                <!-- svelte-ignore a11y_no_static_element_interactions -->
+                <div class="character-dialog" onclick={() => randomMessage()}>
+                    <!-- Connector for the speech balloon -->
+                    <svg
+                        class="character-dialog-connector"
+                        viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg"
+                        ><path d="M20.697 24L9.303 16.003 20.697 8z" /></svg
+                    >
 
-                <h3 class="character-dialog-name">Kimu</h3>
-                <p>{$_("page.home.greeting")}</p>
-            </div>
+                    <div class="character-dialog-name-container">
+                        <h3 class="character-dialog-name">Kimu</h3>
+
+                        <svg
+                            class="character-dialog-next"
+                            fill="var(--color-fg)"
+                            width="2rem"
+                            height="2rem"
+                            viewBox="0 0 12 20"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            ><path
+                                d="m 12.000001,8 v 4 H 8 v 4 H 4 v 4 H 0 V 0 h 4 v 4 h 4 v 4 z"
+                            /></svg
+                        >
+                    </div>
+
+                    <WavyText
+                        text={messages[currentMessage]}
+                        fadeIn={true}
+                        delay={0.02}
+                    />
+                </div>
+            {/key}
         </div>
 
         <div class="character-spells-container">
@@ -101,13 +133,15 @@
     /* CHARACTER */
     .character-container {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
+        flex-wrap: nowrap;
         gap: var(--padding-m);
     }
 
     .character-dialog-container {
         display: grid;
+        flex-wrap: wrap;
+
         grid-template-columns: 5rem auto;
         gap: var(--padding-x);
     }
@@ -122,6 +156,17 @@
         width: fit-content;
         padding: var(--padding-m);
         border: var(--color-border) dashed var(--border-width);
+    }
+
+    .character-dialog-name-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .character-dialog-next {
+        height: 1rem;
+        width: 1rem;
+        top: 0;
+        animation: messageArrow 2s ease infinite;
     }
 
     .character-dialog-connector {
@@ -159,7 +204,22 @@
         gap: var(--padding-m);
     }
 
+    /* ANIMATIONS */
+    @keyframes messageArrow {
+        0%,
+        100% {
+            margin-right: 0rem;
+        }
+        50% {
+            margin-right: 1rem;
+        }
+    }
+
+    /* RESPONSIVE */
     @media screen and (max-width: 728px) {
+        .character-container {
+            flex-direction: column;
+        }
         .character-spells-container {
             width: 100%;
             align-items: unset;

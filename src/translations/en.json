@@ -8,7 +8,13 @@
             "proyects": "Projects"
         },
         "home": {
-            "greeting": "Welcome to my place! =w=",
+            "greeting": [
+                "Welcome to my place! =w=",
+                "My favorite languages are Rust and Pascal!",
+                "I look like an NPC with this messages...",
+                "Nope I don't use wordpress, I hate PHP.",
+                "My first program was a discord bot written in Python... From my phone."
+            ],
             "body": "Welcome to my personal (developer) page!<br><br>Here I plan to save things about me, like what music I like listening to, my personal projects, my story and much more.<br><br>I intend to make this site a safe place for me to express myself and share things I enjoy, but also to help others on their journey and finding things that they like, so take a look around and see if anything catches your attention.<br><br>If you want to chat with me or tell me anything feel free to hit me up on Twitter!",
             "links": {
                 "wishlist": "Wishlist",
