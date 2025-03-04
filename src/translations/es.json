@@ -5,7 +5,8 @@
             "about": "Sobre mi",
             "music": "Música",
             "games": "Jueguitos",
-            "proyects": "Proyectos"
+            "proyects": "Proyectos",
+            "thanks": "Gracias <3"
         },
         "home": {
             "greeting": [
@@ -51,6 +52,16 @@
         },
         "projects": {
             "title": "Proyectos"
+        },
+        "thanks": {
+            "title": "Gracias <3",
+            "texts": {
+                "licorn3": "Tenkiu por la oportunidad que me diste y ser mi mejor amigo :3",
+                "sammwy": "meow",
+                "notkimu": "La afortunada",
+                "dysnomia": "meow",
+                "laika": "meow"
+            }
         }
     }
 }

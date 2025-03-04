@@ -5,7 +5,8 @@
             "about": "About",
             "music": "Music",
             "games": "Games",
-            "proyects": "Projects"
+            "proyects": "Projects",
+            "thanks": "Thanks <3"
         },
         "home": {
             "greeting": [
@@ -51,6 +52,16 @@
         },
         "projects": {
             "title": "Projects"
+        },
+        "thanks": {
+            "title": "Tenkiu <3",
+            "texts": {
+                "licorn3": "Thanks for the opportunity you gave me and being my best friend :3",
+                "sammwy": "meow",
+                "notkimu": "The lucky one",
+                "dysnomia": "Thanks for motivating and helping me out with my projects ^^",
+                "laika": "Thanks for always being there for me and being the best friends I could ask for iwi"
+            }
         }
     }
 }
