@@ -17,7 +17,7 @@
     --padding-x: 1.5rem;
     --padding-xl: 3rem;
     --padding-main-x: clamp(1rem, 15vw, 20rem);
-    --padding-main-y: 3rem;
+    --padding-main-y: 2rem;
 
     --header-height: 4rem;
     --sidebar-width: 10rem;
@@ -129,34 +129,6 @@ select {
     src: url("$lib/assets/fonts/departure_mono/DepartureMono-Regular.otf");
 }
 @font-face {
-    font-family: "fustat";
-    src: url("$lib/assets/fonts/Fustat/Fustat[wght].ttf");
-}
-@font-face {
-    font-family: "NoseTransport";
-    src: url("$lib/assets/fonts/Nose-Transport/Web/NoseTransport9-RegularDot.woff2");
-}
-@font-face {
-    font-family: "schroffer_mono";
-    src: url("$lib/assets/fonts/schroffer_mono/fonts/WOFF2/SchrofferMono-Regular.woff2");
-}
-@font-face {
-    font-family: "acrylic";
-    src: url("$lib/assets/fonts/acrylic/Acrylic-1.0.0.otf");
-}
-@font-face {
-    font-family: "HayuFont";
-    src: url("$lib/assets/fonts/HayuFont/HayuFont.otf");
-}
-@font-face {
     font-family: "vergilia";
     src: url("$lib/assets/fonts/vergilia/vergilia.ttf");
-}
-@font-face {
-    font-family: "goatsica";
-    src: url("$lib/assets/fonts/Goatsica/Goatsica-Regular.woff2");
-}
-@font-face {
-    font-family: "helvetica";
-    src: url("$lib/assets/fonts/mac/Helvetica-14.ttf");
 }
