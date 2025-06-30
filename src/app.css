@@ -118,22 +118,6 @@ select {
     }
 }
 
-/* COLOR MODES */
-@media (prefers-color-scheme: light) {
-    :root {
-        --color-bg: #f5efff;
-        --color-dark: #dfd4f1;
-        --color-fg: #1c1d21;
-        --color-accent: #f7567c;
-        --color-border: #8377d1;
-        --color-warning: #f7567c4f;
-
-        --tier-s: #ffe18d;
-        --tier-a: #e5baea;
-        --tier-b: var(--color-dark);
-    }
-}
-
 /* FONTS */
 @font-face {
     font-family: "departure-mono";
