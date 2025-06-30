@@ -46,10 +46,13 @@
 
 <style>
     .about-character-view {
+        height: 100%;
         width: 15rem;
+
         display: flex;
         flex-direction: column;
         gap: var(--padding-s);
+        
         border-right: var(--border-width) solid var(--color-border);
         padding: var(--padding-m);
     }

@@ -177,7 +177,7 @@
 <style>
     /* About info */
     .about {
-        height: 29.2rem;
+        height: 30rem;
         display: flex;
         border: var(--border-width) solid var(--color-border);
         overflow: hidden;

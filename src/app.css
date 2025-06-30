@@ -17,12 +17,16 @@
     --padding-x: 1.5rem;
     --padding-xl: 3rem;
     --padding-main-x: clamp(1rem, 15vw, 20rem);
-    --padding-main-y: 2rem;
+    --padding-main-y: 5rem;
 
     --header-height: 4rem;
     --sidebar-width: 10rem;
 
     --border-width: 0.1rem;
+}
+
+#filterSource {
+  display: none;
 }
 
 * {
@@ -35,6 +39,7 @@
 
 body {
     min-height: 100vh;
+    
     background: linear-gradient(60% var(--color-bg), 100% black) fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,11 +53,8 @@ main {
 }
 
 /* TEXT */
-.title {
-    font-family: "vergilia";
-    font-size: clamp(2rem, 6vw, 3.5rem);
-    text-align: center;
-    position: relative;
+p {
+    font-size: larger;
 }
 
 a {
@@ -61,6 +63,14 @@ a {
 }
 a:hover {
     text-decoration-color: var(--color-accent);
+}
+
+
+.title {
+    font-family: "vergilia";
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    text-align: center;
+    position: relative;
 }
 
 .no-deco {
@@ -90,20 +100,21 @@ select {
 
 @media screen and (max-width: 980px) {
     :root {
-        --padding-main-x: 3rem;
+        --padding-main-x: 2rem;
+        --padding-main-y: 3rem;
     }
 }
 
 @media screen and (max-width: 728px) {
-    :root {
-        --padding-main-x: 1rem;
-    }
-
     .desktop-only {
         display: none !important;
     }
     .mobile-only {
         display: unset !important;
+    }
+
+    p {
+        font-size: medium;
     }
 }
 
@@ -131,4 +142,12 @@ select {
 @font-face {
     font-family: "vergilia";
     src: url("$lib/assets/fonts/vergilia/vergilia.ttf");
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+:not(svg) {
+    transform-origin: 0px 0px;
 }

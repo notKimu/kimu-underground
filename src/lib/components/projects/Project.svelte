@@ -9,7 +9,7 @@
 </script>
 
 <div class="project-container">
-    <enhanced:img src={img} alt="" />
+    <enhanced:img src={img} class="project-icon" alt="" />
 
     <div class="project-info">
         <h3>{name}</h3>
@@ -27,7 +27,6 @@
 
 <style>
     :root {
-        --container-height: 6rem;
         --tag-docker-bg: #2b5f75be;
         --tag-docker-border: #2c6cbe;
         --tag-java-bg: #75492bbe;
@@ -52,11 +51,13 @@
 
     .project-container {
         position: relative;
-        height: var(--container-height);
-        display: flex;
+
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        grid-template-rows: 1fr min-content; 
         gap: var(--padding-s);
+
         background-color: var(--color-dark);
-        gap: var(--padding-s);
         overflow: hidden;
         padding: var(--padding-s);
     }
@@ -66,29 +67,32 @@
         position: absolute;
         top: -50%;
         left: -70%;
-        height: 10rem;
+        height: 100%;
         width: 5rem;
 
+        animation: shine 2s;
         background-color: var(--color-fg);
         opacity: 0.1;
         transform: skewX(-25deg);
-        animation: shine 2s;
     }
 
-    .project-container img {
-        height: 100%;
-        width: calc(var(--container-height) - (var(--padding-s) * 2));
+    .project-icon {
+        width: 100%;
+        height: auto;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .project-info {
+        grid-area: 1 / 2 / 2 / 3;
     }
 
     .project-tags {
-        height: 100%;
-        display: flex;
+        grid-area: 2 / 1 / 3 / 3;
 
-        justify-content: right;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: var(--padding-s);
-        margin-left: auto;
-        padding: 0.5rem 0;
     }
 
     .project-tag {

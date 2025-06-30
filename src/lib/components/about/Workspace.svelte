@@ -17,19 +17,19 @@
     <div class="worspace-info">
         <div class="workspace-info__entry">
             <h3>{@html $_("page.about.workspace.system")}</h3>
-            <h3>:</h3>
+            <h3 class="desktop-only">:</h3>
             <p>Artix Linux</p>
         </div>
 
         <div class="workspace-info__entry">
             <h3>{@html $_("page.about.workspace.desktop")}</h3>
-            <h3>:</h3>
+            <h3 class="desktop-only">:</h3>
             <p>KDE Plasma</p>
         </div>
 
         <div class="workspace-info__entry">
             <h3>{@html $_("page.about.workspace.init")}</h3>
-            <h3>:</h3>
+            <h3 class="desktop-only">:</h3>
             <p>OpenRC</p>
         </div>
     </div>
@@ -68,6 +68,18 @@
     }
 
     @media screen and (max-width: 728px) {
+        .worspace-info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-x);
+        }
+
+        .workspace-info__entry {
+            display: flex;
+            flex-direction: column;
+            gap: var(--padding-s);
+        }
+
         .workspace-laptop {
             width: 90%;
         }

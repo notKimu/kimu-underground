@@ -48,11 +48,11 @@
                         ><path d="M20.697 24L9.303 16.003 20.697 8z" /></svg
                     >
 
-                    <div class="character-dialog-name-container">
-                        <h3 class="character-dialog-name">Kimu</h3>
+                    <div class="character-dialog__name-container">
+                        <h3>Kimu</h3>
 
                         <svg
-                            class="character-dialog-next"
+                            class="character-dialog__next"
                             fill="var(--color-fg)"
                             width="2rem"
                             height="2rem"
@@ -65,11 +65,13 @@
                         >
                     </div>
 
-                    <WavyText
-                        text={messages[currentMessage]}
-                        fadeIn={true}
-                        delay={0.02}
-                    />
+                    <span class="character-dialog__text">
+                        <WavyText
+                            text={messages[currentMessage]}
+                            fadeIn={true}
+                            delay={0.02}
+                        />
+                    </span>
                 </div>
             {/key}
         </div>
@@ -158,15 +160,19 @@
         border: var(--color-border) dashed var(--border-width);
     }
 
-    .character-dialog-name-container {
+    .character-dialog__name-container {
         display: flex;
         justify-content: space-between;
     }
-    .character-dialog-next {
+    .character-dialog__next {
         height: 1rem;
         width: 1rem;
         top: 0;
         animation: messageArrow 2s ease infinite;
+    }
+
+    .character-dialog__text {
+        font-size: large;
     }
 
     .character-dialog-connector {

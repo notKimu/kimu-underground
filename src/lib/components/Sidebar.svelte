@@ -8,7 +8,7 @@
         <div class="sidebar-title">
             <h3>Filesystem</h3>
         </div>
-        
+
         <div class="sidebar-title__separator"></div>
 
         <a class="sidebar-link" href="/about">
@@ -61,8 +61,15 @@
             <p>{$_("page.sidebar.proyects")}</p>
         </a>
         <a class="sidebar-link" href="/thanks">
-            <svg class="sidebar-link-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 8V5a3 3 0 1 0-6 0v9h9a3 3 0 0 0 0-6H8zm2-2h1a5 5 0 0 1 0 10H0V5a5 5 0 1 1 10 0v1z" fill-rule="evenodd"/>
+            <svg
+                class="sidebar-link-icon"
+                viewBox="0 0 16 16"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M8 8V5a3 3 0 1 0-6 0v9h9a3 3 0 0 0 0-6H8zm2-2h1a5 5 0 0 1 0 10H0V5a5 5 0 1 1 10 0v1z"
+                    fill-rule="evenodd"
+                />
             </svg>
             <p>{$_("page.sidebar.thanks")}</p>
         </a>
@@ -86,15 +93,20 @@
 
 <style>
     :root {
-        --text-padding-h: .3rem;
-        --text-padding-v: .4rem;
+        --text-padding-h: 0.3rem;
+        --text-padding-v: 0.4rem;
         --height-button: 3.5rem;
+
+        --padding-top: calc(
+            var(--padding-main-y) + var(--header-height) - 1.2rem
+        );
+        --padding-left: calc(clamp(0rem, 2.3vw, 2.8rem) - var(--sidebar-width));
     }
 
     .sidebar-container {
         position: fixed;
-        top: calc(var(--padding-x) + var(--header-height));
-        left: calc(0rem - var(--sidebar-width));
+        top: var(--padding-top);
+        left: var(--padding-left);
         display: flex;
         flex-direction: row;
         pointer-events: none;
@@ -114,11 +126,14 @@
         padding: var(--padding-s);
     }
     .article-open {
-        left: var(--padding-m) !important;
+        left: clamp(0rem, 5vw, 3rem) !important;
     }
 
     .sidebar-title {
-        height: calc(var(--height-button) - (var(--padding-s) * 2) - (var(--border-width) * 2));
+        height: calc(
+            var(--height-button) - (var(--padding-s) * 2) -
+                (var(--border-width) * 2)
+        );
         display: flex;
         align-items: center;
         padding: var(--text-padding-v) var(--text-padding-h);
@@ -143,7 +158,8 @@
         background-color: var(--color-accent);
     }
 
-    .sidebar-link:hover p, .sidebar-link:hover svg * {
+    .sidebar-link:hover p,
+    .sidebar-link:hover svg * {
         color: var(--color-bg);
         fill: var(--color-bg);
     }
