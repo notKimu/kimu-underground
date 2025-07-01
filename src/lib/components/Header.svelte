@@ -120,7 +120,7 @@
 
 <style>
     header {
-        margin-top: 1rem;
+        margin-top: 1.2rem;
 
         position: fixed;
         top: 0;
