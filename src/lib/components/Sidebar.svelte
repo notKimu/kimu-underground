@@ -21,7 +21,7 @@
 
     <article class="container__content">
         <div class="sidebar-title">
-            <h3>Filesystem</h3>
+            <h3 class="subtitle">Filesystem</h3>
         </div>
 
         <div class="sidebar-title__separator"></div>

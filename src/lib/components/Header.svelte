@@ -37,7 +37,7 @@
 <header>
     <a href="/" class="titlebar">
         <img class="titlebar-image" src={KimuFaceImg} alt="" />
-        <h2>Kimu</h2>
+        <h2 class="subtitle">Kimu</h2>
     </a>
 
     <div class="social">

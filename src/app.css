@@ -56,12 +56,15 @@ a:hover {
     text-decoration-color: var(--color-accent);
 }
 
-
 .title {
     font-family: "vergilia";
     font-size: clamp(2rem, 6vw, 3.5rem);
     text-align: center;
     position: relative;
+}
+
+.subtitle {
+	    font-family: "Chicago 12";
 }
 
 .no-deco {
@@ -116,6 +119,10 @@ select {
 /* FONTS */
 @font-face {
     font-family: "departure-mono";
+    src: url("$lib/assets/fonts/departure_mono/DepartureMono-Regular.otf");
+}
+@font-face {
+    font-family: "Chicago 12";
     src: url("$lib/assets/fonts/Chicago-12.ttf");
 }
 @font-face {

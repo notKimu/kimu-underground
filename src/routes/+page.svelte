@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { _ } from "svelte-i18n";
+    import { _, format } from "svelte-i18n";
     import WavyText from "$lib/components/WavyText.svelte";
     import Separator from "$lib/components/Separator.svelte";
     import Spells from "$lib/components/index/Spells.svelte";
@@ -7,7 +7,7 @@
     // Images
     import KimuGithubImg from "$lib/assets/images/kimu-github.webp?enhanced";
 
-    const messages: string[] = $_("page.home.greeting") as unknown as string[];
+	const messages: string[] = $format("page.home.greeting") as unknown as string[];
     let currentMessage = $state(0);
 
     function randomMessage() {
@@ -49,7 +49,7 @@
                     >
 
                     <div class="character-dialog__name-container">
-                        <h3>Kimu</h3>
+                        <h3 class="subtitle">Kimu</h3>
 
                         <svg
                             class="character-dialog__next"

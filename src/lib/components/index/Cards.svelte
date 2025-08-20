@@ -19,7 +19,7 @@
             {@html icon}
         </svg>
     {/if}
-    <h3 class="container__title">{name}</h3>
+    <h3 class="container__title subtitle">{name}</h3>
 </a>
 
 <style>
