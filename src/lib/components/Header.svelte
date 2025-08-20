@@ -119,13 +119,15 @@
 <div class="spacer"></div>
 
 <style>
-    header {
-        margin-top: 1.2rem;
+	:root {
+		--spacing: clamp(1.5rem, 2vw, 5rem);
+	}
 
+    header {
         position: fixed;
         top: 0;
         left: 0;
-        height: var(--header-height);
+        height: calc(var(--header-height) + var(--spacing));
         width: 100%;
 
         display: flex;
@@ -135,6 +137,7 @@
         background-color: var(--color-bg);
         border-bottom: var(--border-width) solid var(--color-border);
         padding: var(--padding-m) var(--padding-main-x);
+        padding-top: calc(var(--spacing) + 1rem);
 
         z-index: 1000;
     }
@@ -173,6 +176,6 @@
     }
 
     .spacer {
-        height: var(--header-height);
+        height: calc(var(--header-height) + var(--spacing));
     }
 </style>

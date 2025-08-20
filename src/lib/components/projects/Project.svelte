@@ -65,7 +65,7 @@
     .project-container:hover::before {
         content: "";
         position: absolute;
-        top: -50%;
+        top: 0%;
         left: -70%;
         height: 100%;
         width: 5rem;

@@ -30,6 +30,14 @@
 </div>
 
 <style>
+	:root {
+		--tier-s: #dfcc6e;
+		--tier-a: #8c8891;
+		--tier-b: var(--color-fg);
+		--tag-bg: #333333;
+		--tag-border: #5c5c5c;
+	}
+
     .game {
         height: 5rem;
         display: flex;

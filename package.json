@@ -15,7 +15,6 @@
     "@sveltejs/enhanced-img": "^0.4.4",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
-    "mdsx": "^0.0.6",
     "prettier": "^3.5.1",
     "prettier-plugin-svelte": "^3.3.3",
     "svelte": "^5.0.0",

@@ -163,17 +163,6 @@
     </div>
 </div>
 
-<h3 class="title stories-title">Stories</h3>
-
-<div class="about-stories">
-    <StoryEntry
-        title={$_("page.about.story-01")}
-        path="/about/stories/programming"
-        icon=""
-        num={1}
-    />
-</div>
-
 <style>
     /* About info */
     .about {
@@ -229,17 +218,6 @@
     }
     .about-showed-property h2 {
         text-transform: capitalize;
-    }
-
-    /* Stories */
-    .stories-title {
-        margin-top: var(--padding-xl);
-    }
-
-    .about-stories {
-        display: flex;
-        flex-direction: column;
-        gap: var(--padding-m);
     }
 
     /* Responsiveness on the RPG stats */

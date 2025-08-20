@@ -1,14 +1,12 @@
 import adapter from "@sveltejs/adapter-auto";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
-import { mdsx } from "mdsx";
-import { mdsxConfig } from "./mdsx.config.js";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     // Consult https://kit.svelte.dev/docs/integrations#preprocessors
     // for more information about preprocessors
-    preprocess: [mdsx(mdsxConfig), vitePreprocess()],
-    extensions: [".svelte", ".md"],
+    preprocess: [vitePreprocess()],
+    extensions: [".svelte"],
 
     // Disable legacy mode
     compilerOptions: {

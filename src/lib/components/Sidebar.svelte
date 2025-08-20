@@ -3,8 +3,23 @@
     let isOpen = $state(false);
 </script>
 
-<div class={`sidebar-container ${isOpen ? "article-open" : ""}`} id="sidebar">
-    <article>
+<div class={`container ${isOpen ? "container--open" : ""}`} id="sidebar">
+    <button
+        aria-label="menu switch"
+        class={`container__switch ${isOpen ? "switch-open" : ""}`}
+        onclick={() => (isOpen = !isOpen)}
+    >
+        <svg
+            class="container__switch__icon"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            ><path
+                d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z"
+            /></svg
+        >
+    </button>
+
+    <article class="container__content">
         <div class="sidebar-title">
             <h3>Filesystem</h3>
         </div>
@@ -60,78 +75,78 @@
             >
             <p>{$_("page.sidebar.proyects")}</p>
         </a>
-        <a class="sidebar-link" href="/thanks">
+        <a class="sidebar-link" href="/contact">
             <svg
                 class="sidebar-link-icon"
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <path
-                    d="M8 8V5a3 3 0 1 0-6 0v9h9a3 3 0 0 0 0-6H8zm2-2h1a5 5 0 0 1 0 10H0V5a5 5 0 1 1 10 0v1z"
-                    fill-rule="evenodd"
+                    d="M 0,0 H 16 V 12 H 4 V 4 h 8 v 6 h 2 V 2 H 2 v 12 h 14 v 2 H 0 Z M 10,10 V 6 H 6 v 4 z"
                 />
             </svg>
-            <p>{$_("page.sidebar.thanks")}</p>
+
+            <p>{$_("page.sidebar.contact")}</p>
         </a>
     </article>
-
-    <button
-        aria-label="menu switch"
-        class={`switch ${isOpen ? "switch-open" : ""}`}
-        onclick={() => (isOpen = !isOpen)}
-    >
-        <svg
-            class="switch-icon"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-            ><path
-                d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z"
-            /></svg
-        >
-    </button>
 </div>
 
 <style>
     :root {
         --text-padding-h: 0.3rem;
         --text-padding-v: 0.4rem;
-        --height-button: 3.5rem;
-
-        --padding-top: calc(
-            var(--padding-main-y) + var(--header-height) - 1.2rem
-        );
-        --padding-left: calc(clamp(0rem, 2.3vw, 2.8rem) - var(--sidebar-width));
+        --button-height: 3rem;
+        --button-width: 5rem;
     }
 
-    .sidebar-container {
+    .container {
+        width: 100%;
         position: fixed;
-        top: var(--padding-top);
-        left: var(--padding-left);
+        top: calc(100vh - var(--button-height) - clamp(2.5rem, 2.6vw, 7rem));
+        bottom: 0;
+
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+
+        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        padding: 0 var(--padding-main-x);
         pointer-events: none;
         z-index: 100;
     }
-
-    .sidebar-container * {
+    .container * {
         pointer-events: all;
     }
 
-    article {
-        width: var(--sidebar-width);
-        display: flex;
-        flex-direction: column;
-        background-color: var(--color-bg);
-        border: var(--border-width) solid var(--color-border);
-        padding: var(--padding-s);
+    .container.container--open {
+        top: auto;
+        bottom: 4rem;
+        filter: drop-shadow(0px 0px 20px #000000);
     }
-    .article-open {
-        left: clamp(0rem, 5vw, 3rem) !important;
+
+    /* SIDEBAR LINKS */
+    .container__content {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        background: var(--color-bg);
+        border: var(--border-width) solid var(--color-border);
+        opacity: 0;
+        padding: var(--padding-s);
+        transition: opacity 0s;
+    }
+
+    .container--open .container__content {
+        opacity: 1;
+        transition: opacity 0.2s;
     }
 
     .sidebar-title {
         height: calc(
-            var(--height-button) - (var(--padding-s) * 2) -
+            var(--button-height) - (var(--padding-s) * 2) -
                 (var(--border-width) * 2)
         );
         display: flex;
@@ -150,44 +165,47 @@
         display: flex;
         align-items: center;
         gap: var(--padding-s);
+
+        background: linear-gradient(transparent, var(--color-accent)) center
+            no-repeat;
+        background-position: 0px 100px;
+        border-bottom: var(--border-width) solid transparent;
         padding: var(--text-padding-h) var(--padding-s);
         text-decoration: none;
     }
 
     .sidebar-link:hover {
-        background-color: var(--color-accent);
-    }
-
-    .sidebar-link:hover p,
-    .sidebar-link:hover svg * {
-        color: var(--color-bg);
-        fill: var(--color-bg);
+        background-position: 0px 20px;
+        border-bottom: var(--border-width) solid var(--color-accent);
     }
 
     .sidebar-link-icon {
         fill: var(--color-fg);
         height: 1em;
     }
-    .sidebar-link:hover .sidebar-link-icon {
-        fill: var(--color-accent);
-    }
 
     /* MENU SWITCH */
-    .switch {
-        height: var(--height-button);
-        border: var(--border-width) solid var(--color-border);
-        border-left: 0;
+    .container__switch {
+        height: var(--button-height);
+        width: var(--button-width);
+
         background: var(--color-bg);
+        border: var(--border-width) solid var(--color-border);
         padding: var(--padding-s);
+        margin-left: auto;
     }
     .switch-open p {
         transform: rotate(180deg);
     }
-    .switch-open .switch-icon {
+
+    .container--open .container__switch {
+        border-bottom-width: 0px;
+    }
+    .switch-open .container__switch__icon {
         transform: rotate(90deg);
     }
 
-    .switch-icon {
+    .container__switch__icon {
         width: 1.5rem;
         fill: var(--color-fg);
     }

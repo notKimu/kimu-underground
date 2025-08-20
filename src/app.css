@@ -6,54 +6,18 @@
     --color-accent: #d57994;
     --color-border: #a86dc7;
     --color-warning: #a145914f;
-    --tier-s: #dfcc6e;
-    --tier-a: #8c8891;
-    --tier-b: var(--color-fg);
-    --tag-bg: #333333;
-    --tag-border: #5c5c5c;
 
     --padding-s: 0.5rem;
     --padding-m: 1rem;
     --padding-x: 1.5rem;
     --padding-xl: 3rem;
     --padding-main-x: clamp(1rem, 15vw, 20rem);
-    --padding-main-y: 5rem;
+    --padding-main-y: 3rem;
 
     --header-height: 4rem;
     --sidebar-width: 10rem;
 
     --border-width: 0.15rem;
-}
-
-/* :root {
-    --color-bg: #3c2942;
-    --color-dark: #0e0b0e;
-    --color-fg: #fcfcfc;
-    --color-accent: #b036aa;
-    --color-border: #904ba5;
-    --color-warning: #a145914f;
-    --tier-s: #dfcc6e;
-    --tier-a: #8c8891;
-    --tier-b: var(--color-fg);
-    --tag-bg: #333333;
-    --tag-border: #5c5c5c;
-
-    --padding-s: 0.5rem;
-    --padding-m: 1rem;
-    --padding-x: 1.5rem;
-    --padding-xl: 3rem;
-    --padding-main-x: clamp(1rem, 15vw, 20rem);
-    --padding-main-y: 5rem;
-
-    --header-height: 4rem;
-    --sidebar-width: 10rem;
-
-    --border-width: 0.15rem;
-} */
-
-
-#filterSource {
-  display: none;
 }
 
 * {
@@ -68,7 +32,7 @@ body {
     min-height: 100vh;
     
     color: var(--color-fg);
-    background: linear-gradient(-180deg, var(--color-bg), var(--color-dark)) fixed;
+    background: linear-gradient(var(--color-bg), var(--color-dark)) fixed;
     background-color: var(--color-bg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,12 +91,16 @@ select {
 
 @media screen and (max-width: 980px) {
     :root {
-        --padding-main-x: 2rem;
-        --padding-main-y: 3rem;
+        --padding-main-x: 4rem;
     }
 }
 
 @media screen and (max-width: 728px) {
+	:root {
+        --padding-main-x: 2rem;
+        --padding-main-y: 2rem;
+    }
+
     .desktop-only {
         display: none !important;
     }
@@ -148,7 +116,7 @@ select {
 /* FONTS */
 @font-face {
     font-family: "departure-mono";
-    src: url("$lib/assets/fonts/departure_mono/DepartureMono-Regular.otf");
+    src: url("$lib/assets/fonts/Chicago-12.ttf");
 }
 @font-face {
     font-family: "vergilia";
