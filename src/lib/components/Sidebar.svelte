@@ -102,15 +102,15 @@
     .container {
         width: 100%;
         position: fixed;
-        top: calc(100vh - var(--button-height) - clamp(2.5rem, 2.6vw, 7rem));
+        top: calc(100dvh - var(--button-height) - clamp(2.5rem, 2.6vw, 7rem));
         bottom: 0;
 
         display: flex;
         flex-direction: column;
 
-        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
         padding: 0 var(--padding-main-x);
         pointer-events: none;
+        transition: 0s;
         z-index: 100;
     }
     .container * {
@@ -121,6 +121,7 @@
         top: auto;
         bottom: 4rem;
         filter: drop-shadow(0px 0px 20px #000000);
+        transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     /* SIDEBAR LINKS */

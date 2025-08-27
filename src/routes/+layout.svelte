@@ -35,10 +35,11 @@
         position: fixed;
         top: 0;
         left: 0;
-        height: 100vh;
-        width: 100%;
+        height: 100dvh;
+        width: 100dvw;
 
         pointer-events: none;
+		transition: 0s;
         z-index: 999999999;
     }
 
