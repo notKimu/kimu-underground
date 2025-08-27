@@ -3,9 +3,10 @@
 	import SignalImg from "$lib/assets/images/contact/signal.png?enhanced";
 	import DiscordImg from "$lib/assets/images/contact/discord.png?enhanced";
 	import TwitterImg from "$lib/assets/images/contact/twitter.png?enhanced";
+	import MailImg from "$lib/assets/images/contact/mail.png?enhanced";
 	import StarImg from "$lib/assets/images/star.gif";
 
-	type SocialApp = "Discord" | "Signal" | "Twitter";
+	type SocialApp = "Discord" | "Signal" | "Twitter" | "Mail";
 	type Props = {
 		socialApp: SocialApp;
 		name: string;
@@ -24,6 +25,8 @@
 			<enhanced:img src={SignalImg} alt="Signal icon" />
 		{:else if socialApp == "Twitter"}
 			<enhanced:img src={TwitterImg} alt="Twitter icon" />
+		{:else if socialApp == "Mail"}
+			<enhanced:img src={MailImg} alt="Email icon" />
 		{/if}
 	</div>
 

@@ -102,7 +102,7 @@
     .container {
         width: 100%;
         position: fixed;
-        top: calc(100dvh - var(--button-height) - clamp(2.5rem, 2.6vw, 7rem));
+        top: calc(100dvh - var(--button-height) - clamp(3.5rem, 2.6vw, 7rem));
         bottom: 0;
 
         display: flex;
