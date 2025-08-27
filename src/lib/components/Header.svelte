@@ -149,6 +149,7 @@
         border-bottom: var(--border-width) solid transparent;
         border-top: var(--border-width) solid transparent;
 		text-decoration: none;
+		transition: .2s cubic-bezier(0,1.8,1,-1.51);
 	}
 	.titlebar:hover {
 		background-position: 0px 7px;
