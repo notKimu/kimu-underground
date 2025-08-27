@@ -142,13 +142,25 @@
         z-index: 1000;
     }
 
+	.titlebar {
+		background: linear-gradient(transparent, var(--color-accent)) center
+            no-repeat;
+        background-position: 0px 100px;
+        border-bottom: var(--border-width) solid transparent;
+        border-top: var(--border-width) solid transparent;
+		text-decoration: none;
+	}
+	.titlebar:hover {
+		background-position: 0px 7px;
+        border-bottom: var(--border-width) solid var(--color-accent);
+	}
+
     .titlebar,
     .social {
         display: flex;
         align-items: center;
         gap: var(--padding-m);
     }
-
     .titlebar,
     .titlebar-image {
         height: 100%;
