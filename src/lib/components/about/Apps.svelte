@@ -1,9 +1,9 @@
 <script lang="ts">
     import VSCodiumImg from "$lib/assets/images/applications/vscodium.webp?enhanced";
     import NeovimImg from "$lib/assets/images/applications/neovim.webp?enhanced";
-    import WinampImg from "$lib/assets/images/applications/winamp.webp?enhanced";
+    import AudaciousImg from "$lib/assets/images/applications/audacious.png?enhanced";
     import ObsidianImg from "$lib/assets/images/applications/obsidian.webp?enhanced";
-    import KritaImg from "$lib/assets/images/applications/krita.webp?enhanced";
+    import FireAlpacaImg from "$lib/assets/images/applications/firealpaca.webp?enhanced";
     import LibreWolfImg from "$lib/assets/images/applications/librewolf.webp?enhanced";
 </script>
 
@@ -24,9 +24,9 @@
 
     <div class="app-entry">
         <div class="app-image">
-            <enhanced:img src={WinampImg} alt="" loading="lazy" />
+            <enhanced:img src={AudaciousImg} alt="" loading="lazy" />
         </div>
-        <p>Winamp</p>
+        <p>Audacious</p>
     </div>
 
     <div class="app-entry">
@@ -38,9 +38,9 @@
 
     <div class="app-entry">
         <div class="app-image">
-            <enhanced:img src={KritaImg} alt="" loading="lazy" />
+            <enhanced:img src={FireAlpacaImg} alt="" loading="lazy" />
         </div>
-        <p>Krita</p>
+        <p>FireAlpaca</p>
     </div>
 
     <div class="app-entry">
