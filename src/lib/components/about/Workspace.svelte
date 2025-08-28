@@ -1,6 +1,6 @@
 <script lang="ts">
     import { _ } from "svelte-i18n";
-    import WorkstationImg from "$lib/assets/images/workspace/workstation.webp?enhanced";
+    import WorkstationImg from "$lib/assets/images/workspace/workstation.png?enhanced";
     import Separator from "../Separator.svelte";
 </script>
 
@@ -16,21 +16,21 @@
 
     <div class="worspace-info">
         <div class="workspace-info__entry">
+            <h3>{@html $_("page.about.workspace.model")}</h3>
+            <h3 class="desktop-only">:</h3>
+            <p>MacBook Pro</p>
+        </div>
+
+        <div class="workspace-info__entry">
+            <h3>{@html $_("page.about.workspace.chip")}</h3>
+            <h3 class="desktop-only">:</h3>
+            <p>M1 (2020)</p>
+        </div>
+
+        <div class="workspace-info__entry">
             <h3>{@html $_("page.about.workspace.system")}</h3>
             <h3 class="desktop-only">:</h3>
-            <p>Artix Linux</p>
-        </div>
-
-        <div class="workspace-info__entry">
-            <h3>{@html $_("page.about.workspace.desktop")}</h3>
-            <h3 class="desktop-only">:</h3>
-            <p>KDE Plasma</p>
-        </div>
-
-        <div class="workspace-info__entry">
-            <h3>{@html $_("page.about.workspace.init")}</h3>
-            <h3 class="desktop-only">:</h3>
-            <p>OpenRC</p>
+            <p>macOS Sequoia</p>
         </div>
     </div>
 </div>
