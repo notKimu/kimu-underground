@@ -2,7 +2,6 @@
     import { _ } from "svelte-i18n";
     import Separator from "$lib/components/Separator.svelte";
     import CharacterStats from "$lib/components/about/CharacterStats.svelte";
-    import StoryEntry from "$lib/components/about/StoryEntry.svelte";
     import Tools from "$lib/components/about/Tools.svelte";
     import Apps from "$lib/components/about/Apps.svelte";
     import Inventory from "$lib/components/about/Inventory.svelte";

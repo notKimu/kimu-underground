@@ -24,7 +24,7 @@
         <span class="info-separator"
             ><b>{@html $_("page.about.stats.level")}</b>
             <p>:</p>
-            <p>19</p></span
+            <p>20</p></span
         >
         <span class="info-separator"
             ><b>{@html $_("page.about.stats.hp")}</b>
