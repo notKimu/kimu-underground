@@ -42,7 +42,7 @@
         text-decoration: none;
     }
     .container:hover {
-		background-position: 0px 0px;
+		background-position: 0px 30px;
 		box-shadow: 0 0 10px 1px var(--color-border);
     }
 

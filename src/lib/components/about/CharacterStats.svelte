@@ -1,16 +1,24 @@
-<script>
+<script lang="ts">
     import { _ } from "svelte-i18n";
     import Separator from "../Separator.svelte";
     // Images
     import CharacterImg from "$lib/assets/images/lain_walk.webp";
+
+    function getAge(): number {
+        var today = new Date();
+        var birthDate = new Date(2005, 8, 24);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    }
 </script>
 
 <div class="about-character-view">
     <div class="about-character-img">
-        <img
-            src={CharacterImg}
-            alt="Character walking"
-        />
+        <img src={CharacterImg} alt="Character walking" />
     </div>
 
     <Separator margin={false} />
@@ -24,7 +32,7 @@
         <span class="info-separator"
             ><b>{@html $_("page.about.stats.level")}</b>
             <p>:</p>
-            <p>20</p></span
+            <p>{getAge()}</p></span
         >
         <span class="info-separator"
             ><b>{@html $_("page.about.stats.hp")}</b>
@@ -52,7 +60,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--padding-s);
-        
+
         border-right: var(--border-width) solid var(--color-border);
         padding: var(--padding-m);
     }

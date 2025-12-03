@@ -3,19 +3,16 @@
         name,
         img,
         tier,
-        darkMode = false,
     }: {
         name: string;
         img: any;
         tier: "s" | "a" | "b";
-        darkMode?: boolean;
     } = $props();
 </script>
 
 <div class="game" style={`border-left: .5rem solid var(--tier-${tier});`}>
     <div class="game-info">
         <enhanced:img
-            class={darkMode ? "invert" : ""}
             src={img}
             alt=""
             loading="lazy"
@@ -65,12 +62,5 @@
     /* TIERS */
     .tier-letter {
         text-transform: capitalize;
-    }
-
-    /* INVERT DARK IMAGES ON DARK MODE */
-    @media (prefers-color-scheme: dark) {
-        .invert {
-            filter: invert();
-        }
     }
 </style>

@@ -30,7 +30,7 @@
         height: 7rem;
         display: flex;
         gap: var(--padding-s);
-        background-color: var(--color-border);
+        background-color: var(--color-warning);
         padding: var(--padding-s);
         overflow: hidden;
     }

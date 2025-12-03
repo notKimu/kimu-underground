@@ -144,7 +144,6 @@
     .character-dialog-container {
         display: grid;
         flex-wrap: wrap;
-
         grid-template-columns: 5rem auto;
         gap: var(--padding-x);
     }
@@ -152,6 +151,7 @@
     .character-img {
         width: 100%;
         height: auto;
+		justify-content: center;
     }
 
     .character-dialog {
@@ -159,6 +159,9 @@
         width: fit-content;
         padding: var(--padding-m);
         border: var(--color-border) dashed var(--border-width);
+		background: linear-gradient(transparent, var(--color-border));
+		background-repeat: no-repeat;
+		background-position: 0px 50px;
     }
 
     .character-dialog__name-container {

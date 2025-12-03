@@ -19,6 +19,9 @@
         background-color: var(--color-dark);
         overflow: hidden;
     }
+	.track-container:hover {
+		background-color: var(--color-warning);
+	}
 
     .track-container img {
         width: clamp(4rem, 10vw, 7rem);
