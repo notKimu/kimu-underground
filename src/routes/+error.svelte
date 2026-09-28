@@ -68,8 +68,12 @@
     .error-info::after {
         content: ":<";
         position: absolute;
-        bottom: -1%;
-        right: -1%;
+        bottom: calc(-1 * var(--border-width));
+        right: calc(-1 * var(--border-width));
+
+        background: linear-gradient(var(--color-bg), var(--color-dark)) fixed;
         background-color: var(--color-bg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>
