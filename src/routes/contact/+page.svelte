@@ -1,10 +1,11 @@
 <script lang="ts">
-	import { _ } from "svelte-i18n";
+    import { _ } from "svelte-i18n";
     import Separator from "$lib/components/Separator.svelte";
-	import Social from "$lib/components/contact/Social.svelte";
+    import Social from "$lib/components/contact/Social.svelte";
 </script>
 
-<svelte:head>z
+<svelte:head
+    >z
     <title>{$_("page.contact.title")}</title>
 </svelte:head>
 
@@ -13,23 +14,44 @@
 <Separator />
 
 <div class="container">
-	<Social socialApp={"Mail"} name={"Email"} linkText={"Kimumail"} link={"mailto:notkimu@proton.me"} />
-	<Social socialApp={"Signal"} name={"Signal"} linkText={"notkimu.01"} link={"https://signal.me/#eu/hOPAuM89TYNjvRwD05569EYR-HuO4oCo06ZyOYjtgCWn-mM-QqtBH5hSSF8cv0Sc"} />
-	<Social socialApp={"Discord"} name={"Discord"} linkText={"Net Cafe"} link={"https://discord.gg/NfeXrQdXdE"} />
-	<Social socialApp={"Twitter"} name={"Twitter"} linkText={"Kimu 🍃"} link={"https://twitter.com/notkimu"} />
+	<div class="container__items">
+		<Social
+			socialApp={"Mail"}
+			name={"Email"}
+			linkText={"Business"}
+			link={"mailto:kimu64x@gmail.com"}
+		/>
+		<Social
+			socialApp={"Twitter"}
+			name={"Twitter"}
+			linkText={"Kimu 🍃"}
+			link={"https://x.com/notkimu"}
+		/>
+		<Social
+			socialApp={"Discord"}
+			name={"Discord"}
+			linkText={"Net Cafe"}
+			link={"https://discord.gg/NfeXrQdXdE"}
+		/>
+	</div>
 </div>
 
 <style>
-	.container {
-		display: flex;
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+	.container__items {
+		width: fit-content;
 		align-items: center;
-		justify-content: center;
-		gap: var(--padding-m);
-	}
+        display: flex;
+    }
 
-	@media screen and (max-width: 728px) {
-		.container {
-			flex-direction: column;
-		}
-	}
+    @media screen and (max-width: 728px) {
+        .container__items {
+            flex-direction: column;
+        }
+    }
 </style>

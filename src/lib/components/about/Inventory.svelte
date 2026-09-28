@@ -1,37 +1,29 @@
 <script lang="ts">
     import CameraImg from "$lib/assets/images/inventory/camera.webp?enhanced";
     import PhoneImg from "$lib/assets/images/inventory/mobile.webp?enhanced";
-    import IpodImg from "$lib/assets/images/inventory/ipod-mini.webp?enhanced";
-    import DapImg from "$lib/assets/images/inventory/mp3.webp?enhanced";
+    import DapImg from "$lib/assets/images/inventory/dap.webp?enhanced";
 </script>
 
 <div class="about-inventory">
     <div class="inventory-item">
         <div>
-            <enhanced:img src={CameraImg} alt="" loading="lazy"> </enhanced:img>
-        </div>
-        <p>Nikon L19</p>
-    </div>
-
-    <div class="inventory-item">
-        <div>
             <enhanced:img src={PhoneImg} alt="" loading="lazy"> </enhanced:img>
         </div>
-        <p>Mi Mix 2s</p>
-    </div>
-
-    <div class="inventory-item">
-        <div>
-            <enhanced:img src={IpodImg} alt="" loading="lazy"> </enhanced:img>
-        </div>
-        <p>iPod Mini</p>
+        <p>Pixel 10</p>
     </div>
 
     <div class="inventory-item">
         <div>
             <enhanced:img src={DapImg} alt="" loading="lazy"> </enhanced:img>
         </div>
-        <p>Fiio M3K</p>
+        <p>HiBy M500</p>
+    </div>
+
+    <div class="inventory-item">
+        <div>
+            <enhanced:img src={CameraImg} alt="" loading="lazy"> </enhanced:img>
+        </div>
+        <p>Nikon L19</p>
     </div>
 </div>
 
@@ -52,6 +44,8 @@
         height: auto;
         width: 100%;
         image-rendering: pixelated;
+        filter: drop-shadow(3px 0 0 white) drop-shadow(-3px 0 0 white)
+            drop-shadow(0 3px 0 white) drop-shadow(0 -3px 0 white);
     }
 
     /* RESPONSIVE */

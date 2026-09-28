@@ -18,19 +18,19 @@
         <div class="workspace-info__entry">
             <h3>{@html $_("page.about.workspace.model")}</h3>
             <h3 class="desktop-only">:</h3>
-            <p>MacBook Pro</p>
+            <p>Asus ZenBook S 13</p>
         </div>
 
         <div class="workspace-info__entry">
             <h3>{@html $_("page.about.workspace.chip")}</h3>
             <h3 class="desktop-only">:</h3>
-            <p>M1 (2020)</p>
+            <p>i7-1355U</p>
         </div>
 
         <div class="workspace-info__entry">
             <h3>{@html $_("page.about.workspace.system")}</h3>
             <h3 class="desktop-only">:</h3>
-            <p>macOS Sequoia</p>
+            <p>Fedora 44</p>
         </div>
     </div>
 </div>
@@ -52,6 +52,8 @@
     .workspace-laptop img {
         height: auto;
         width: 100%;
+        filter: drop-shadow(3px 0 0 white) drop-shadow(-3px 0 0 white)
+            drop-shadow(0 3px 0 white) drop-shadow(0 -3px 0 white);
     }
 
     .workspace-info__entry {

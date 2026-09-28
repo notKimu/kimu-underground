@@ -3,7 +3,7 @@
 	import SignalImg from "$lib/assets/images/contact/signal.png?enhanced";
 	import DiscordImg from "$lib/assets/images/contact/discord.png?enhanced";
 	import TwitterImg from "$lib/assets/images/contact/twitter.png?enhanced";
-	import MailImg from "$lib/assets/images/contact/mail.png?enhanced";
+	import MailImg from "$lib/assets/images/contact/mail.webp?enhanced";
 	import StarImg from "$lib/assets/images/star.gif";
 
 	type SocialApp = "Discord" | "Signal" | "Twitter" | "Mail";
@@ -44,21 +44,20 @@
 	
 		display: flex;
 		flex-direction: row;
-		flex-wrap: wrap;
 		align-items: center;
 		align-self: stretch;
-		gap: var(--padding-m);
+		gap: var(--padding-x);
 
-		background: linear-gradient(var(--color-bg), var(--color-border)) center no-repeat;
+		background: linear-gradient(transparent, var(--color-border)) center no-repeat;
 		background-position: 0px 300px;
-		border: var(--border-width) solid var(--color-fg);
-		padding: var(--padding-m);
+		padding: var(--padding-m) var(--padding-x);
 		text-decoration: none;
 	}
 	.container:hover {
 		background-position: 0px 0px;
-		box-shadow: 0 0 10px 1px var(--color-border);
-		padding: var(--padding-m);
+	}
+	.container:not(:last-child) {
+		border-right: var(--border-width) solid var(--color-border);
 	}
 
 	.container__img {
@@ -90,6 +89,11 @@
 	@media screen and (max-width: 728px) {
 		.container {
 			width: 100%;
+			gap: var(--padding-xl);
+		}
+		.container:not(:last-child) {
+			border-bottom: var(--border-width) solid var(--color-border);
+			border-right: none;
 		}
 	}
 </style>
